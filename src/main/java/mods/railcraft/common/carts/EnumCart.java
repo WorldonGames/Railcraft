@@ -49,6 +49,7 @@ public enum EnumCart implements ICartType {
     LOCO_STEAM_SOLID(1, EntityLocomotiveSteamSolid.class, null),
     LOCO_STEAM_MAGIC(1, EntityLocomotiveSteamMagic.class, null),
     LOCO_ELECTRIC(1, EntityLocomotiveElectric.class, null),
+    LOCO_FUELELECTRIC(1, EntityLocomotiveFuelElectric.class, null),
     LOCO_CREATIVE(3, EntityLocomotiveCreative.class, null),
     BORE(1, EntityTunnelBore.class, null),
     ENERGY_BATBOX(0, EntityCartEnergyBatBox.class, null),
@@ -149,11 +150,13 @@ public enum EnumCart implements ICartType {
             case BORE:
                 return new ItemTunnelBore();
             case LOCO_STEAM_SOLID:
-                return new ItemLocomotive(this, LocomotiveRenderType.STEAM_SOLID, EnumColor.LIGHT_GRAY, EnumColor.GRAY);
+                return new ItemLocomotive(this, LocomotiveRenderType.STEAM_SOLID, EnumColor.BLACK, EnumColor.RED);
             case LOCO_STEAM_MAGIC:
-                return new ItemLocomotive(this, LocomotiveRenderType.STEAM_MAGIC, EnumColor.LIGHT_GRAY, EnumColor.GRAY);
+                return new ItemLocomotive(this, LocomotiveRenderType.STEAM_MAGIC, EnumColor.BLACK, EnumColor.PURPLE);
             case LOCO_ELECTRIC:
-                return new ItemLocomotive(this, LocomotiveRenderType.ELECTRIC, EnumColor.YELLOW, EnumColor.BLACK);
+                return new ItemLocomotive(this, LocomotiveRenderType.ELECTRIC, EnumColor.LIGHT_GRAY, EnumColor.BROWN);            
+            case LOCO_FUELELECTRIC:
+                    return new ItemLocomotive(this, LocomotiveRenderType.FUELELECTRIC, EnumColor.GREEN, EnumColor.RED);
             case LOCO_CREATIVE:
                 return new ItemLocomotive(this, LocomotiveRenderType.ELECTRIC, EnumColor.BLACK, EnumColor.MAGENTA);
             case ANCHOR:

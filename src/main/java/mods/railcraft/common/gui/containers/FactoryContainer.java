@@ -129,6 +129,8 @@ public class FactoryContainer {
                     return ContainerLocomotiveSteamSolid.make(inv, (EntityLocomotiveSteamSolid) obj);
                 case LOCO_ELECTRIC:
                     return ContainerLocomotiveElectric.make(inv, (EntityLocomotiveElectric) obj);
+                case LOCO_FUELELECTRIC:
+                    return ContainerLocomotiveFuelElectric.make(inv, (EntityLocomotiveFuelElectric) obj);
                 case LOCO_CREATIVE:
                     return ContainerLocomotive.make(inv, (EntityLocomotiveCreative) obj);
                 case SWITCH_MOTOR:

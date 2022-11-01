@@ -80,7 +80,7 @@ public abstract class EntityLocomotive extends CartContainerBase implements IDir
     public boolean clientCanLock;
     protected float renderYaw;
     private String model = "";
-    private int fuel;
+    protected int fuel;
     private int update = MiscTools.getRand().nextInt();
     private int whistleDelay;
     private int tempIdle;

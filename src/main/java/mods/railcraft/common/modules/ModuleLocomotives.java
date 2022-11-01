@@ -87,6 +87,12 @@ public class ModuleLocomotives extends RailcraftModule {
             RailcraftItem.gear.registerItem();
             RailcraftItem.plate.registerItem();
         }
+        cart = EnumCart.LOCO_FUELELECTRIC;
+        if (cart.setup()) {
+            paintLocomotive(cart.getCartItem());
+            RailcraftItem.gear.registerItem();
+            RailcraftItem.plate.registerItem();
+        }
 
         cart = EnumCart.LOCO_CREATIVE;
         if (cart.setup()) {
@@ -99,7 +105,7 @@ public class ModuleLocomotives extends RailcraftModule {
         if (EnumCart.LOCO_ELECTRIC.isEnabled()) {
             Object feederUnit = EnumMachineEpsilon.ELECTRIC_FEEDER.isAvaliable() ? EnumMachineEpsilon.ELECTRIC_FEEDER.getItem() : "blockCopper";
             ItemStack cartStack = EnumCart.LOCO_ELECTRIC.getCartItem();
-            ItemLocomotive.setItemColorData(cartStack, EnumColor.YELLOW, EnumColor.BLACK);
+            ItemLocomotive.setItemColorData(cartStack, EnumColor.LIGHT_GRAY, EnumColor.BROWN);
             CraftingPlugin.addShapedRecipe(cartStack,
                     "LT ",
                     "TUT",
@@ -109,6 +115,37 @@ public class ModuleLocomotives extends RailcraftModule {
                     'M', Items.minecart,
                     'G', RailcraftItem.gear.getRecipeObject(EnumGear.STEEL),
                     'T', RailcraftItem.plate.getRecipeObject(EnumPlate.STEEL));
+        }
+        
+        if (EnumCart.LOCO_FUELELECTRIC.isEnabled()) {
+            ItemStack fuelbox;
+            if (EnumMachineBeta.BOILER_FIREBOX_FLUID.isAvaliable())
+                fuelbox = EnumMachineBeta.BOILER_FIREBOX_FLUID.getItem();
+            else
+                fuelbox = new ItemStack(Blocks.furnace);
+        	
+            ItemStack tank;
+            if (EnumMachineBeta.TANK_STEEL_WALL.isAvaliable())
+                tank = EnumMachineBeta.TANK_STEEL_WALL.getItem();
+            else if (RailcraftItem.ingot.getStack(ItemIngot.EnumIngot.STEEL) != null)
+                tank = RailcraftItem.ingot.getStack(ItemIngot.EnumIngot.STEEL);
+            else
+                tank = new ItemStack(Items.iron_ingot);
+            
+            Object feederUnit = EnumMachineEpsilon.ELECTRIC_FEEDER.isAvaliable() ? EnumMachineEpsilon.ELECTRIC_FEEDER.getItem() : "blockCopper";
+            ItemStack cartStack = EnumCart.LOCO_FUELELECTRIC.getCartItem();
+            ItemLocomotive.setItemColorData(cartStack, EnumColor.GREEN, EnumColor.RED);
+            CraftingPlugin.addShapedRecipe(cartStack,
+                    "PUP",
+                    "PFT",
+                    "MGM",
+                    'L', Blocks.redstone_lamp,
+                    'U', feederUnit,
+                    'F', fuelbox,
+                    'T', tank,
+                    'M', Items.minecart,
+                    'G', RailcraftItem.gear.getRecipeObject(EnumGear.STEEL),
+                    'P', RailcraftItem.plate.getRecipeObject(EnumPlate.STEEL));
         }
     }
 

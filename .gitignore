@@ -32,3 +32,5 @@ private/
 out/
 classes/
 .settings
+usernamecache.json
+options.txt

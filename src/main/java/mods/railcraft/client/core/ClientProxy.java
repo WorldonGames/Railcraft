@@ -27,6 +27,7 @@ import mods.railcraft.api.carts.locomotive.LocomotiveRenderType;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 import mods.railcraft.client.render.*;
+import mods.railcraft.client.render.models.locomotives.ModelLocomotiveFuelElectric;
 import mods.railcraft.client.render.models.locomotives.ModelLocomotiveSteamMagic;
 import mods.railcraft.client.render.models.locomotives.ModelLocomotiveSteamSolid;
 import mods.railcraft.client.sounds.RCSoundHandler;
@@ -119,6 +120,7 @@ public class ClientProxy extends CommonProxy {
 //        LocomotiveRenderType.STEAM_SOLID.registerRenderer(new LocomotiveRendererDefault("railcraft:electric", "locomotive.model.electric.default", new ModelLocomotiveElectric()));
         LocomotiveRenderType.STEAM_MAGIC.registerRenderer(new LocomotiveRendererDefault("railcraft:default", "locomotive.model.steam.magic.default", new ModelLocomotiveSteamMagic()));
         LocomotiveRenderType.ELECTRIC.registerRenderer(new LocomotiveRendererElectric());
+        LocomotiveRenderType.FUELELECTRIC.registerRenderer(new LocomotiveRendererFuelElectric());
 
         ItemStack stack = LocomotiveRenderType.STEAM_SOLID.getItemWithRenderer("railcraft:default");
         if (stack != null)
@@ -131,6 +133,10 @@ public class ClientProxy extends CommonProxy {
         stack = LocomotiveRenderType.ELECTRIC.getItemWithRenderer("railcraft:default");
         if (stack != null)
             MinecraftForgeClient.registerItemRenderer(stack.getItem(), new RenderItemLocomotive(LocomotiveRenderType.ELECTRIC, (EntityLocomotive) EnumCart.LOCO_ELECTRIC.makeCart(stack, null, 0, 0, 0)));
+        
+        stack = LocomotiveRenderType.FUELELECTRIC.getItemWithRenderer("railcraft:default");
+        if (stack != null)
+            MinecraftForgeClient.registerItemRenderer(stack.getItem(), new RenderItemLocomotive(LocomotiveRenderType.FUELELECTRIC, (EntityLocomotive) EnumCart.LOCO_FUELELECTRIC.makeCart(stack, null, 0, 0, 0)));
 
         RenderFluidLoader fluidLoaderRenderer = new RenderFluidLoader();
         ClientRegistry.bindTileEntitySpecialRenderer(TileFluidLoader.class, fluidLoaderRenderer);

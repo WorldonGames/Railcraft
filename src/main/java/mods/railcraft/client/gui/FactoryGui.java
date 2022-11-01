@@ -164,6 +164,8 @@ public class FactoryGui {
                     return new GuiLocomotiveSteamSolid(inv, (EntityLocomotiveSteamSolid) obj);
                 case LOCO_ELECTRIC:
                     return new GuiLocomotiveElectric(inv, (EntityLocomotiveElectric) obj);
+                case LOCO_FUELELECTRIC:
+                    return new GuiLocomotiveFuelElectric(inv, (EntityLocomotiveFuelElectric) obj);
                 case LOCO_CREATIVE:
                     return new GuiLocomotiveCreative(inv, (EntityLocomotiveCreative) obj);
                 default:

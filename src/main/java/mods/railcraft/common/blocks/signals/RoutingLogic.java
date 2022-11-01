@@ -434,6 +434,8 @@ public class RoutingLogic {
         		EntityLocomotive loco = (EntityLocomotive)cart;
 	            if (value.equalsIgnoreCase("Electric"))
 	                return loco.getCartType() == EnumCart.LOCO_ELECTRIC;
+	            if (value.equalsIgnoreCase("FuelElectric"))
+	                return loco.getCartType() == EnumCart.LOCO_FUELELECTRIC;
 	            if (value.equalsIgnoreCase("Steam"))
 	            	return loco.getCartType() == EnumCart.LOCO_STEAM_SOLID;
 	            if (value.equalsIgnoreCase("Steam_Magic"))

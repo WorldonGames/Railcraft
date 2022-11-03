@@ -229,7 +229,7 @@ public class RailcraftConfig {
     private static void loadBlockTweaks() {
         cartDispenserDelay = get(CAT_TWEAKS_BLOCKS + ".cartdispenser", "delay", 0, 0, Integer.MAX_VALUE, "set the minimum number of seconds between cart dispensing, default=0");
 
-        maxTankSize = get(CAT_TWEAKS_BLOCKS + ".irontank", "maxsize", 3, 9, 9, "Allows you to set the max Iron Tank base dimension, valid values are 3, 5, 7, and 9");
+        maxTankSize = get(CAT_TWEAKS_BLOCKS + ".irontank", "maxsize", 3, 9, 13, "Allows you to set the max Iron Tank base dimension, valid values are 3, 5, 7, and 13");
 
         allowTankStacking = get(CAT_TWEAKS_BLOCKS + ".irontank", "allow.stacking", true, "Change to '{t}=false' to disable the stacking of Iron Tanks");
 
@@ -294,12 +294,12 @@ public class RailcraftConfig {
 
         boolean minecartTankCustomize = get(CAT_TWEAKS_CARTS + ".tank", "useCustomValues", false, "change to '{t}=true' to adjust the Tank Cart's capacity and fill rate");
 
-        int capacity = get(CAT_TWEAKS_CARTS + ".tank", "capacity", 4, 32, 64, "change the value to your desired Tank Cart capacity in buckets, min=4, default=32, max=64, ignored if 'tweaks.minecarts.tank.useCustomValues=false'");
+        int capacity = get(CAT_TWEAKS_CARTS + ".tank", "capacity", 4, 32, 256, "change the value to your desired Tank Cart capacity in buckets, min=4, default=32, max=256, ignored if 'tweaks.minecarts.tank.useCustomValues=false'");
         if (minecartTankCustomize)
             minecartTankCapacity = capacity;
 
-        int fillrate = get(CAT_TWEAKS_CARTS + ".tank", "fillrate", 4, 32, 64,
-                "change the value to your desired Tank Cart fill rate in milli-buckets per tick, min=4, default=32, max=64\n"
+        int fillrate = get(CAT_TWEAKS_CARTS + ".tank", "fillrate", 4, 32, 256,
+                "change the value to your desired Tank Cart fill rate in milli-buckets per tick, min=4, default=32, max=256\n"
                         + "there are 1000 milli-buckets in a bucket, ignored if 'tweaks.minecarts.tank.useCustomValues=false'");
         if (minecartTankCustomize)
             minecartTankFillRate = fillrate;

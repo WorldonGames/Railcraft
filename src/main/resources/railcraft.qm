@@ -8,19 +8,19 @@
         "icon": [ "http://www.railcraft.info/wp-content/uploads/2014/08/track.reinforced.png" ],
         "logo": [ "http://www.railcraft.info/wp-content/uploads/2014/08/logo.png" ],
         "website": [ "http://railcraft.info" ],
-        "source": [ "https://github.com/CovertJaguar" ]
+        "source": [ "https://github.com/WorldonGames/Railcraft" ]
     ],
     "license": "Railcraft License",
     "updateUrl": "github://CovertJaguar@Railcraft/quickmod.json",
     "tags": [ "minecart", "steam", "decorative", "electricity" ],
     "categories": [ "Wordgen", "Minecarts", "Decorative", "Tech" ],
     "authors": {
-        "Author": [ "CovertJaguar" ],
+        "Author": [ "CovertJaguar", "=WoG='s CubicCats" ],
     },
     "versions": [
         {
             "mcCompat": [ "1.7.10" ],
-            "name": "9.2.2.0",
+            "name": "x9.12.2.2",
             "installType": "forgeMod",
             "urls": [
                 {

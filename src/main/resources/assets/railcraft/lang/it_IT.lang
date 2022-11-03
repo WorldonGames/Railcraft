@@ -1,168 +1,324 @@
 # Parent Language: en_US
 # translated by Frantisek_Markov and pazzoeo
+# sistemata per GearsLand dai gatti cubici
 
-item.railcraft.armor.goggles.name=Occhiali del Ferroviere
+#Fare sezione comandi
+chat.railcraft.api.error=Error: Outdated API, please check your log for more info.
 
-item.railcraft.armor.overalls.name=Tuta dell'Ingegnere
+command.railcraft.aliases=Aliases: %s
+command.railcraft.help=Type '%s' for help.
+command.railcraft.list=Available Sub-Commands:
+command.railcraft.permlevel=Permission Level: %s
+command.railcraft.noperms=You do not have permission to use this command.
 
-item.railcraft.armor.steel.helmet.name=Elmo d'Acciaio
-item.railcraft.armor.steel.plate.name=Corazza d'Acciaio
-item.railcraft.armor.steel.legs.name=Cosciali d'Acciaio
-item.railcraft.armor.steel.boots.name=Gambali d'Acciaio
+command.railcraft.railcraft.help=Various commands for Railcraft
+command.railcraft.railcraft.format=Format: /%s <sub-command>
 
-item.railcraft.backpack.iceman.t1.name=Zaino dello Spazzaneve
-item.railcraft.backpack.iceman.t2.name=Zaino dello Spazzaneve Tessuto
-item.railcraft.backpack.trackman.t1.name=Zaino del Ferroviere
-item.railcraft.backpack.trackman.t2.name=Zaino del Ferroviere Tessuto
-item.railcraft.backpack.tip=Progettato da Railcraft, Inc.
+command.railcraft.railcraft.admin.desc=- %s : Admin Tools
+command.railcraft.railcraft.admin.help=Tools for administration.
+command.railcraft.railcraft.admin.format=Format: /%s
 
-tile.railcraft.residual.heat.name=Calore residuo
+command.railcraft.railcraft.admin.kill.desc=- %s : Kill Tasks
+command.railcraft.railcraft.admin.kill.help=Tools for killing things.
+command.railcraft.railcraft.admin.kill.format=Format: /%s
 
-tile.railcraft.brick.abyssal.brick.name=Mattone abissale
-tile.railcraft.brick.abyssal.block.name=Blocco abissale
-tile.railcraft.brick.abyssal.fitted.name=Pietra abissale da muro
-tile.railcraft.brick.abyssal.ornate.name=Pietra abissale ornata
-tile.railcraft.brick.abyssal.etched.name=Pietra abissale incisa
+command.railcraft.railcraft.admin.kill.animals.desc=- %s : Kill Animals
+command.railcraft.railcraft.admin.kill.animals.help=Kills all animals in the current world.
+command.railcraft.railcraft.admin.kill.animals.format=Format: /%s
 
-tile.railcraft.brick.bleachedbone.brick.name=Mattone d'Osso scolorito
-tile.railcraft.brick.bleachedbone.block.name=Blocco d'Osso scolorito
-tile.railcraft.brick.bleachedbone.fitted.name=Pietra d'Osso scolorito da muro
-tile.railcraft.brick.bleachedbone.ornate.name=Pietra d'Osso scolorito ornata
-tile.railcraft.brick.bleachedbone.etched.name=Pietra d'Osso scolorito incisa
+command.railcraft.railcraft.admin.kill.minecarts.desc=- %s : Kill Minecarts
+command.railcraft.railcraft.admin.kill.minecarts.help=Kills all minecarts in the current world.
+command.railcraft.railcraft.admin.kill.minecarts.format=Format: /%s
 
-tile.railcraft.brick.bloodstained.brick.name=Mattone macchiato di sangue
-tile.railcraft.brick.bloodstained.block.name=Blocco macchiato di sangue
-tile.railcraft.brick.bloodstained.fitted.name=Pietra macchiata di sangue da muro
-tile.railcraft.brick.bloodstained.ornate.name=Pietra macchiata di sangue ornata
-tile.railcraft.brick.bloodstained.etched.name=Pietra macchiata di sangue incisa
+command.railcraft.railcraft.debug.desc=- %s : Debug Tools
+command.railcraft.railcraft.debug.help=Tools for debugging difficult issues.
+command.railcraft.railcraft.debug.format=Format: /%s
 
-tile.railcraft.brick.frostbound.brick.name=Mattone legato al gelo
-tile.railcraft.brick.frostbound.block.name=Blocco legatao al gelo
-tile.railcraft.brick.frostbound.fitted.name=Pietra legata al gelo da muro
-tile.railcraft.brick.frostbound.ornate.name=Pietra legata al gelo ornata
-tile.railcraft.brick.frostbound.etched.name=Pietra legata al gelo incisa
+command.railcraft.railcraft.debug.tile.desc=- %s : Tile Debug Tools
+command.railcraft.railcraft.debug.tile.help=Tools for debugging tiles.
+command.railcraft.railcraft.debug.tile.format=Format: /%s x y z
 
-tile.railcraft.brick.infernal.brick.name=Mattone infernale
-tile.railcraft.brick.infernal.block.name=Blocco infernale
-tile.railcraft.brick.infernal.fitted.name=Pietra infernale da muro
-tile.railcraft.brick.infernal.ornate.name=Pietra infernale ornata
-tile.railcraft.brick.infernal.etched.name=Pietra infernale incisa
+command.railcraft.railcraft.debug.tile.controller.desc=- %s : Controller Debug Tools
+command.railcraft.railcraft.debug.tile.controller.help=Tools for debugging Controller tiles.
+command.railcraft.railcraft.debug.tile.controller.format=Format: /%s x y z
 
-tile.railcraft.brick.quarried.brick.name=Mattone cavo
-tile.railcraft.brick.quarried.block.name=Blocco cavo
-tile.railcraft.brick.quarried.fitted.name=Pietra cava da muro
-tile.railcraft.brick.quarried.ornate.name=Pietra cava ornata
-tile.railcraft.brick.quarried.etched.name=Pietra cava incisa
+command.railcraft.railcraft.debug.tile.receiver.desc=- %s : Receiver Debug Tools
+command.railcraft.railcraft.debug.tile.receiver.help=Tools for debugging Receiver tiles.
+command.railcraft.railcraft.debug.tile.receiver.format=Format: /%s x y z
 
-tile.railcraft.brick.sandy.brick.name=Mattone sabbioso
-tile.railcraft.brick.sandy.block.name=Blocco sabbioso
-tile.railcraft.brick.sandy.fitted.name=Pietra sabbiosa da muro
-tile.railcraft.brick.sandy.ornate.name=Pietra sabbiosa ornata
-tile.railcraft.brick.sandy.etched.name=Pietra sabbiosa incisa
 
-item.railcraft.cart.anchor.name=Minecart con Ancora
-entity.Railcraft.cart.anchor.name=Minecart con Ancora
-item.railcraft.cart.anchor.admin.name=Minecart con ancora dell' amministratore
-entity.Railcraft.cart.anchor.admin.name=Minecart con ancora dell' amministratore
-item.railcraft.cart.anchor.personal.name=Minecart con ancora personale
-entity.Railcraft.cart.anchor.personal.name=Minecart con ancora personale
-item.railcraft.cart.basic.name=Minecart
-entity.Railcraft.cart.basic.name=Minecart
-item.railcraft.cart.bore.name=Scavatrice
-entity.Railcraft.cart.bore.name=Scavatrice
-item.railcraft.cart.chest.name=Minecart con Cassa
-entity.Railcraft.cart.chest.name=Minecart con Cassa
-item.railcraft.cart.furnace.name=Minecart con Fornace
-entity.Railcraft.cart.furnace.name=Minecart con Fornace
-item.railcraft.cart.energy.batbox.name=Minecart con Batbox
-entity.Railcraft.cart.energy.batbox.name=Minecart con Batbox
-item.railcraft.cart.energy.mfe.name=Minecart con MFE
-entity.Railcraft.cart.energy.mfe.name=Minecart con MFE
-item.railcraft.cart.energy.mfsu.name=Minecart con MFSU
-entity.Railcraft.cart.energy.mfsu.name=Minecart con MFSU
-item.railcraft.cart.gift.name=Minecart Regalo
-entity.Railcraft.cart.gift.name=Minecart Regalo
-item.railcraft.cart.loco.steam.name=Locomotiva a Vapore
-entity.Railcraft.cart.loco.steam.name=Locomotiva a Vapore
-item.railcraft.cart.pumpkin.name=Minecart con Zucca
-entity.Railcraft.cart.pumpkin.name=Minecart con Zucca
-item.railcraft.cart.tank.name=Minecart con Tanica
-entity.Railcraft.cart.tank.name=Minecart con Tanica
-item.railcraft.cart.tnt.name=Minecart con TNT
-entity.Railcraft.cart.tnt.name=Minecart con TNT
-item.railcraft.cart.tnt.wood.name=Minecart di Legno con TNT
-entity.Railcraft.cart.tnt.wood.name=Minecart di Legno con TNT
-item.railcraft.cart.track.relayer.name=Minecart scambia-binari
-entity.Railcraft.cart.track.relayer.name=Minecart scambia-binari
-item.railcraft.cart.undercutter.name=Minecart cambia-blocco
-entity.Railcraft.cart.undercutter.name=Minecart cambia-blocco
-item.railcraft.cart.work.name=Minecart da lavoro
-entity.Railcraft.cart.work.name=Minecart da lavoro
+#Messaggi di decesso
+death.railcraft.bore.1=%s pensava di poter intralciare il progresso
+death.railcraft.bore.2=%s ha provato a fermare la talpa
+death.railcraft.bore.3=%s è stato triturato dalla Fresa meccanica a piena sezione
+death.railcraft.bore.4=%s si è illuso di poter battere John Henry
+death.railcraft.bore.5=%s è rimasto incastrato sotto la TBM
+death.railcraft.bore.6=%s si è trovato dal lato sbagliato del fresa
 
-railcraft.color.black=Nero
-railcraft.color.blue=Blu
-railcraft.color.brown=Marrone
-railcraft.color.cyan=Ciano
-railcraft.color.gray=Grigio
-railcraft.color.green=Verde
-railcraft.color.light.blue=Blu Chiaro
-railcraft.color.light.gray=Grigio Chiaro
-railcraft.color.lime=Color Lime
-railcraft.color.magenta=Magenta
-railcraft.color.orange=Arancione
-railcraft.color.pink=Rosa
-railcraft.color.purple=Viola
-railcraft.color.red=Rosso
-railcraft.color.white=Bianco
-railcraft.color.yellow=Giallo
+death.railcraft.crusher.1=%s è inciampato in un macchinario pesante
+death.railcraft.crusher.2=%s non è un uomo d'acciaio, si è triturato come tutti gli altri
+death.railcraft.crusher.3=%s fissava il vuoto, poi è scivolato dentro alla frantumatrice
+death.railcraft.crusher.4=%s avrà bisogno di rifornire il suo equipaggiamento
+death.railcraft.crusher.5=%s ha ignorato il cartello di "Attenzione al gradino"
+death.railcraft.crusher.6=In vendita ora! Gelatina di sangue di %s
+death.railcraft.crusher.7=%s è stato ridotto in poltiglia
+death.railcraft.crusher.8=%s avrebbe fatto meglio a leggere le istruzioni
 
-tile.railcraft.cube.stone.abyssal.name=Pietra abissale
-tile.railcraft.cube.stone.quarried.name=Pietra cava
-tile.railcraft.cube.brick.infernal.name=Mattone infernale infernale (OBSOLETO)
-tile.railcraft.cube.brick.sandy.name=Mattone sabbioso (OBSOLETO)
-tile.railcraft.cube.coke.name=Blocco di Carbone da carburante
-tile.railcraft.cube.concrete.name=Blocco di Cemento
-tile.railcraft.cube.crushed.obsidian.name=Ossidiana distrutta
-tile.railcraft.cube.steel.name=Blocco d'Acciaio
+death.railcraft.steam.1=%s è stato cotto a puntino
+death.railcraft.steam.2=%s non è immune alle alte temperature, nonostante affermasse il contrario
+death.railcraft.steam.3=%s ha scoperto quanto può essere doloroso il vapore
+death.railcraft.steam.4=%s è caduto vittima di un incidente sul lavoro
+death.railcraft.steam.5=%s probabilmente non avrebbe dovuto prenderci dentro
+death.railcraft.steam.6=%s ha scoperto che i bagni di vapore non hanno lo stesso effetto benefico di una sauna
 
-death.railcraft.bore.1=%s è andato nella via del progresso
-death.railcraft.bore.2=%s ha provato a fermare la Scavatrice
-death.railcraft.bore.3=%s è stato distrutto dalla Scavatrice
-death.railcraft.bore.4=%s ha pensato di poter essere meglio di John Henry
-death.railcraft.bore.5=%s si è bloccato tra le rocce e un posto duro
+death.railcraft.track.electric.1=%s ha urinato su una rotaia in tensione
+death.railcraft.track.electric.2=%s ha scoperto il significato di "Alta tensione"
+death.railcraft.track.electric.3=%s è stato illuminato dai prodigi dell'elettrificazione
+death.railcraft.track.electric.4=%s è inciampato nella terza rotaia
+death.railcraft.track.electric.5=%s ha avuto una rivelazione folgorante
+death.railcraft.track.electric.6=%s ha scoperto qualcosa sull'elettricità: FA MALE!
 
-death.railcraft.train.1=%s è stato colpito da un treno
+death.railcraft.train.1=%s è stato investito da un treno
 death.railcraft.train.2=%s stava giocando sui binari
-death.railcraft.train.3=%s ha giocato al pollo con un treno; il treno ha vinto
-death.railcraft.train.4=%s ha preso il treno sbagliato
-death.railcraft.train.5=%s ha comprato un biglietto di sola andata all'Aldilà
+death.railcraft.train.3=%s ha affrontato il treno in una prova di forza; inutile dire chi ha vinto
+death.railcraft.train.4=%s ha preso il treno, in pieno
+death.railcraft.train.5=%s ha acquistato un biglietto di sola andata per l'oltretomba
+death.railcraft.train.6=%s avrebbe fatto meglio ad indossare la tuta da lavoro dell'armatore
 
-tile.railcraft.detector.advanced.name=Detector - Avanzato
-tile.railcraft.detector.age.name=Detector - Età
-tile.railcraft.detector.animal.name=Detector - Animale
-tile.railcraft.detector.any.name=Detector - Qualsiasi
-tile.railcraft.detector.cart.name=Detector - Minecart
-tile.railcraft.detector.empty.name=Detector - Vuoto
-tile.railcraft.detector.energy.name=Detector - Energia
-tile.railcraft.detector.explosive.name=Detector - Esplosivo
-tile.railcraft.detector.item.name=Detector - Oggetto
-tile.railcraft.detector.mob.name=Detector - Mob
-tile.railcraft.detector.locomotive.name=Detector - Locomotiva
-tile.railcraft.detector.player.name=Detector - Giocatore
-tile.railcraft.detector.powered.name=Detector - Potenziato
-tile.railcraft.detector.routing.name=Detector - Avviamento
-tile.railcraft.detector.sheep.name=Detector - Pecore
-tile.railcraft.detector.tank.name=Detector - Tanica
-tile.railcraft.detector.train.name=Detector - Treno
-tile.railcraft.detector.villager.name=Detector - Paesani
+#Incantamenti
+enchantment.railcraft.crowbar.destruction=Demolizione
+enchantment.railcraft.crowbar.implosion=Implosione
+enchantment.railcraft.crowbar.wrecking=Contundente
 
+#Vagoni (entità)
+entity.Railcraft.cart.anchor.admin.name=Vagone con ancora dimensionale diagnostica
+entity.Railcraft.cart.anchor.name=Vagone con ancora dimensionale
+entity.Railcraft.cart.anchor.personal.name=Vagone con ancora dimensionale personale
+entity.Railcraft.cart.basic.name=Vagone
+entity.Railcraft.cart.bore.name=Fresatrice mecc. a piena sezione
+entity.Railcraft.cart.cargo.name=Vagone merci
+entity.Railcraft.cart.chest.name=Vagone con cassa
+entity.Railcraft.cart.energy.batbox.name=Vagone con accumulatore BatBox™
+entity.Railcraft.cart.energy.cesu.name=Vagone con accumulatore CESU™
+entity.Railcraft.cart.energy.mfe.name=Vagone con accumulatore MFE™
+entity.Railcraft.cart.energy.mfsu.name=Vagone con accumulatore MFSU™
+entity.Railcraft.cart.furnace.name=Motrice a gassogeno
+entity.Railcraft.cart.gift.name=Vagone regalo
+entity.Railcraft.cart.loco.electric.name=Locomotiva elettrica
+entity.Railcraft.cart.loco.fuelelectric.name=Locomotiva termica-elettrica
+entity.Railcraft.cart.loco.steam.solid.name=Locomotiva a vapore
+entity.Railcraft.cart.loco.creative.name=Locomotiva a moto perpetuo
+entity.Railcraft.cart.pumpkin.name=Vagone zucca
+entity.Railcraft.cart.redstone.flux.name=Vagone con accumulatore RF
+entity.Railcraft.cart.tank.name=Vagone cisterna
+entity.Railcraft.cart.tnt.name=Vagone esplosivo
+entity.Railcraft.cart.tnt.wood.name=Vagone esplosivo in legno
+entity.Railcraft.cart.track.layer.name=Vagone di costruzione
+entity.Railcraft.cart.track.relayer.name=Vagone di rinnovamento
+entity.Railcraft.cart.track.remover.name=Vagone di demolizione
+entity.Railcraft.cart.undercutter.name=Vagone di risanamento
+entity.Railcraft.cart.work.name=Vagone da lavoro
+
+#Fluidi
+fluid.creosote=Creosoto
+fluid.steam=Vapore
+
+#Oggetti (indossabili)
+item.railcraft.armor.goggles.name=Occhiali dell'armatore
+item.railcraft.armor.overalls.name=Tuta da lavoro dell'armatore
+item.railcraft.armor.overalls.tip=Protegge dai pericoli\n del settore ferroviario
+item.railcraft.armor.steel.boots.name=Stivali di acciaio
+item.railcraft.armor.steel.helmet.name=Elmetto di acciaio
+item.railcraft.armor.steel.legs.name=Gambiera di acciaio
+item.railcraft.armor.steel.plate.name=Corazza di acciaio
+
+#Oggetti (zaini)
+item.railcraft.backpack.apothecary.t1.name=Zaino dello speziale
+item.railcraft.backpack.apothecary.t2.name=Zaino in tessuto dello speziale
+item.railcraft.backpack.iceman.t1.name=Zaino dello spazzaneve
+item.railcraft.backpack.iceman.t2.name=Zaino in tessuto dello spazzaneve
+item.railcraft.backpack.trackman.t1.name=Zaino dell'armatore
+item.railcraft.backpack.trackman.t2.name=Zaino in tessuto dell'armatore
+item.railcraft.backpack.tip=Progettato da  Railcraft, Inc.
+
+#Teste per fresatrice
+item.railcraft.borehead.diamond.name=Testa in diamante per fresatrice
+item.railcraft.borehead.iron.name=Testa in ferro per fresatrice
+item.railcraft.borehead.steel.name=Testa in acciaio per fresatrice
+
+#Vagoni (oggetti)
+item.railcraft.cart.anchor.admin.name=Vagone con ancora dimensionale diagnostica
+item.railcraft.cart.anchor.name=Vagone con ancora dimensionale
+item.railcraft.cart.anchor.personal.name=Vagone con ancora dimensionale personale
+item.railcraft.cart.basic.name=Vagone
+item.railcraft.cart.bore.name=Fresatrice meccanica a piena sezione
+item.railcraft.cart.cargo.name=Vagone merci
+item.railcraft.cart.chest.name=Vagone con cassa
+item.railcraft.cart.energy.batbox.name=Vagone con accumulatore BatBox™
+item.railcraft.cart.energy.cesu.name=Vagone con accumulatore CESU™
+item.railcraft.cart.energy.mfe.name=Vagone con accumulatore MFE™
+item.railcraft.cart.energy.mfsu.name=Vagone con accumulatore MFSU™
+item.railcraft.cart.furnace.name=Motrice a gassogeno
+item.railcraft.cart.gift.name=Vagone regalo
+item.railcraft.cart.gift.tip=Buon Natale!
+item.railcraft.cart.loco.electric.name=Locomotiva elettrica
+item.railcraft.cart.loco.fuelelectric.name=Locomotiva termica-elettrica
+item.railcraft.cart.loco.steam.solid.name=Locomotiva a vapore
+item.railcraft.cart.loco.creative.name=Locomotiva a moto perpetuo
+item.railcraft.cart.loco.creative.tip=§o§9Un sogno futurista
+item.railcraft.cart.pumpkin.name=Vagone zucca
+item.railcraft.cart.pumpkin.tip=Dolcetto o scherzetto?
+item.railcraft.cart.redstone.flux.name=Vagone con accumulatore RF
+item.railcraft.cart.tank.name=Vagone cisterna
+item.railcraft.cart.tnt.name=Vagone esplosivo
+item.railcraft.cart.tnt.wood.name=Vagone esplosivo in legno
+item.railcraft.cart.track.layer.name=Vagone di costruzione
+item.railcraft.cart.track.layer.tip=Posa di nuovi armamenti
+item.railcraft.cart.track.relayer.name=Vagone di rinnovamento
+item.railcraft.cart.track.relayer.tip=Sostituzione della sovrastruttura
+item.railcraft.cart.track.remover.name=Vagone di demolizione
+item.railcraft.cart.track.remover.tip=Demolisce armamenti esistenti
+item.railcraft.cart.undercutter.name=Vagone di risanamento
+item.railcraft.cart.undercutter.tip=Sostituzione della massicciata
+item.railcraft.cart.work.name=Vagone da lavoro
+
+#Polveri
 item.railcraft.dust.charcoal.name=Polvere di carbonella
 item.railcraft.dust.obsidian.name=Polvere di ossidiana
 item.railcraft.dust.saltpeter.name=Salnitro
 item.railcraft.dust.sulfur.name=Zolfo
 
-item.railcraft.fuel.coke.name=Carbone da carburante
+item.railcraft.emblem.name=Incisione Railcraft, Inc.
 
+#Inserire firestone
+item.railcraft.firestone.cracked.name=Cracked Firestone
+item.railcraft.firestone.cracked.tip.charged=Leaking heat,\n it can still be used\n if you are careful...
+item.railcraft.firestone.cracked.tip.empty=Damaged, but it\n could still be useful\n if you could recharge it...
+item.railcraft.firestone.cut.name=Cut Firestone
+item.railcraft.firestone.cut.tip=Still its energies\n rage out of control...
+item.railcraft.firestone.raw.name=Raw Firestone
+item.railcraft.firestone.raw.tip=It quickens in your hands,\n you can feel it in the\n very air around you...
+item.railcraft.firestone.refined.name=Refined Firestone
+item.railcraft.firestone.refined.tip.charged=Filled with energy,\n you need only exert\n your will on it to\n release blistering heat...
+item.railcraft.firestone.refined.tip.empty=Its energies controlled,\n it could be useful\n if you could recharge it...
+
+
+#Oggetti (fluidi)
+item.railcraft.fluid.creosote.bottle.name=Bottiglia di creosoto
+item.railcraft.fluid.creosote.bucket.name=Secchio di creosoto
+item.railcraft.fluid.creosote.can.name=Tanica di creosoto
+item.railcraft.fluid.creosote.cell.name=Cella di creosoto
+item.railcraft.fluid.creosote.refactory.name=Capsula di creosoto
+item.railcraft.fluid.creosote.wax.name=Capsula di creosoto
+item.railcraft.fluid.steam.bottle.name=Bottiglia di vapore
+
+#Risorse
+item.railcraft.fuel.coke.name=Coke grado ferroviario
+item.railcraft.ingot.copper.name=Lingotto di rame
+item.railcraft.ingot.lead.name=Lingotto di piombo
+item.railcraft.ingot.steel.name=Lingotto di acciaio
+item.railcraft.ingot.tin.name=Lingotto di stagno
+item.railcraft.nugget.copper.name=Pepita di rame
+item.railcraft.nugget.iron.name=Pepita di ferro
+item.railcraft.nugget.lead.name=Pepita di piombo
+item.railcraft.nugget.steel.name=Pepita di acciaio
+item.railcraft.nugget.tin.name=Pepita di stagno
+
+#Parti
+item.railcraft.part.bleached.clay.name=Argilla sbiancata
+item.railcraft.part.circuit.controller.name=Circuito di controllo
+item.railcraft.part.circuit.receiver.name=Circuito di ricezione
+item.railcraft.part.circuit.signal.name=Circuito di segnalamento
+item.railcraft.part.gear.bushing.name=Boccola in stagno
+item.railcraft.part.gear.gold.plate.name=Ingranaggio placcato in oro
+item.railcraft.part.gear.iron.name=Ingranaggio di ferro
+item.railcraft.part.gear.steel.name=Ingranaggio di acciaio
+item.railcraft.part.plate.copper.name=Piastra rivettata in rame
+item.railcraft.part.plate.iron.name=Piastra rivettata in ferro
+item.railcraft.part.plate.steel.name=Piastra rivettata in acciaio
+item.railcraft.part.plate.tin.name=Piastra rivettata in stagno
+item.railcraft.part.rail.advanced.name=Rotaia di controllo
+item.railcraft.part.rail.electric.name=Rotaia elettrificata
+item.railcraft.part.rail.reinforced.name=Rotaia ad alta densità
+item.railcraft.part.rail.speed.name=Rotaia per alta velocità
+item.railcraft.part.rail.standard.name=Rotaia convenzionale
+item.railcraft.part.rail.wood.name=Rotaia in legno profilato
+
+item.railcraft.part.railbed.stone.name=Traverse in calcestruzzo armato
+item.railcraft.part.railbed.wood.name=Traverse in legno
+item.railcraft.part.rebar.name=Tondino
+item.railcraft.part.signal.lamp.name=Lampada di segnalamento
+item.railcraft.part.tie.stone.name=Traversa in calcestruzzo armato
+item.railcraft.part.tie.wood.name=Traversa in legno
+item.railcraft.part.turbine.blade.name=Pala per turbina elettrogena
+item.railcraft.part.turbine.disk.name=Disco per turbina elettrogena
+item.railcraft.part.turbine.rotor.name=Rotore per turbina elettrogena
+
+#Instradamento
+item.railcraft.routing.table.name=Tabella di instradamento
+item.railcraft.routing.ticket.gold.name=Abbonamento ferroviario
+item.railcraft.routing.ticket.name=Biglietto ferroviario corsa singola
+
+#Cose
+item.railcraft.tool.crowbar.name=Piede di porco in ferro
+item.railcraft.tool.crowbar.reinforced.name=Piede di porco in acciaio
+item.railcraft.tool.crowbar.tip=§oConsente l'aggancio del materiale rotabile
+item.railcraft.tool.electric.meter.name=Multimetro ferroviario
+item.railcraft.tool.magnifying.glass.name=Lente per ispezione ferroviaria
+item.railcraft.tool.notepad.action.copy=§7*Copiata la configurazione di %s§7*
+item.railcraft.tool.notepad.action.copy.fail=§7*Questo non è l'oggetto giusto*
+item.railcraft.tool.notepad.action.empty=§7*Non posso incollare il nulla, prima va copiato*
+item.railcraft.tool.notepad.action.paste=§7*Incollata la configurazione in %s§7*
+item.railcraft.tool.notepad.action.paste.fail=§7*Questo non è l'oggetto giusto*
+item.railcraft.tool.notepad.name=Quaderno dell'armatore
+item.railcraft.tool.notepad.tip.contents=Contenuto: @s
+item.railcraft.tool.notepad.tip.contents.filter.items=§2Filtro oggetti
+item.railcraft.tool.notepad.tip.contents.filter.fluid=§bFiltro fluidi
+item.railcraft.tool.notepad.tip.contents.filter.cart=§eFiltro vagoni
+item.railcraft.tool.notepad.tip.contents.empty=§4Vuoto
+item.railcraft.tool.notepad.tip.mode.all=Tutto
+item.railcraft.tool.notepad.tip.mode.cart.filter=Filtro vagoni
+item.railcraft.tool.notepad.tip.mode.loader.filters=Filtri oggetti/fluidi
+item.railcraft.tool.notepad.tip.mode=Modalità incolla: @s
+item.railcraft.tool.notepad.tip=Tasto destro per incollare\nShift+destro per copiare\nShift+destro a vuoto per cancellare
+item.railcraft.tool.signal.label.name=Etichetta per impianti ferroviari
+item.railcraft.tool.signal.label.tip=§9Si rinomina con un'incudine.\n§oIdentifica segnali e altri apparati
+item.railcraft.tool.signal.tuner.name=Sintonizzatore di segnali
+item.railcraft.tool.signal.tuner.tip=Accoppia un controllore ad un ricevitore
+item.railcraft.tool.steel.axe.name=Ascia di acciaio
+item.railcraft.tool.steel.hoe.name=Zappa di acciaio
+item.railcraft.tool.steel.pickaxe.name=Piccone di acciaio
+item.railcraft.tool.steel.shears.name=Cesoie di acciaio
+item.railcraft.tool.steel.shovel.name=Pala di acciaio
+item.railcraft.tool.steel.sword.name=Spada di acciaio
+item.railcraft.tool.surveyor.name=Sezionatore di blocco
+item.railcraft.tool.surveyor.tip=Collega i singoli segnali in una sezione di blocco
+item.railcraft.tool.whistle.tuner.name=Diapason
+item.railcraft.tool.whistle.tuner.tip=Regola il tono del fischio della locomotiva
+
+item.railcraft.upgrade.lapotron=Modulo di aggiornamento Lap-oTron™
+
+item.synthetic=sintetico
+
+#Colori
+railcraft.color.black=nero
+railcraft.color.blue=blu
+railcraft.color.brown=marrone
+railcraft.color.cyan=ciano
+railcraft.color.gray=grigio
+railcraft.color.green=verde
+railcraft.color.light.blue=azzurro
+railcraft.color.light.gray=grigio chiaro
+railcraft.color.lime=lime
+railcraft.color.magenta=magenta
+railcraft.color.orange=arancione
+railcraft.color.pink=rosa
+railcraft.color.purple=viola
+railcraft.color.red=rosso
+railcraft.color.white=bianco
+railcraft.color.yellow=giallo
+
+#Non so come funzionino, da rivedere
 railcraft.gates.action.pause=Pausa lavoro
 railcraft.gates.action.sendcart=Invia Minecart
 
@@ -185,32 +341,62 @@ railcraft.gates.trigger.temp.cold=Freddo
 railcraft.gates.trigger.temp.warm=Tiepido
 railcraft.gates.trigger.temp.hot=Caldo
 
-railcraft.gui.anchor.pair.fail.alignment=@1$s non è allineato all'asse con quel @2$s
-railcraft.gui.anchor.pair.fail.distance=@1$s è torppo lontano per essere sincronizzato con quel @2$s
-railcraft.gui.anchor.pair.start=@s sincronizzazione iniziata
-railcraft.gui.anchor.pair.success=@s è stato sincronizzato con successo
-railcraft.gui.anchor.fuel=Perle Ender
-railcraft.gui.anchor.fuel.remaining=@.2f ore
-railcraft.gui.aura.enable=@s Aura Attiva
-railcraft.gui.aura.disable=@s Aura Disattiva
-railcraft.gui.blast.furnace=Alto forno
-railcraft.gui.steam.boiler=Bollitore a Vapore
+
+#SEZIONE INTERFACCIA
+#Ancore, da fare
+railcraft.gui.anchor.fuel.remaining=@.2f hours
+railcraft.gui.anchor.fuel=Ender Pearls
+railcraft.gui.anchor.pair.fail.alignment=%1$s is not axis aligned with that %2$s
+railcraft.gui.anchor.pair.fail.distance=%1$s is too far to pair with that %2$s
+railcraft.gui.anchor.pair.fail.dimension=%1$s is in a different dimension than the target
+railcraft.gui.anchor.pair.fail.invalid=This is not a valid target for pairing with the %s
+railcraft.gui.anchor.pair.fail.unloaded=Target was unloaded while attempting to pair with %s
+railcraft.gui.anchor.pair.cancel=%s pairing was cancelled
+railcraft.gui.anchor.pair.start=%s pairing was initiated
+railcraft.gui.anchor.pair.success=%s was successfully paired
+
+#Aspetti
+railcraft.gui.aspect.blink.red.name=Rosso int.
+railcraft.gui.aspect.blink.yellow.name=Giallo int.
+railcraft.gui.aspect.green.name=Verde
+railcraft.gui.aspect.off.name=Spento
+railcraft.gui.aspect.red.name=Rosso
+railcraft.gui.aspect.yellow.name=Giallo
+
+#???
+railcraft.gui.aura.disable=@s Aura disattiva
+railcraft.gui.aura.enable=@s Aura attiva
+
+railcraft.gui.blast.furnace=Altoforno
+
+#TBM
 railcraft.gui.bore.ballast=Massicciata
-railcraft.gui.bore.fuel=Carburante
+railcraft.gui.bore.fuel=Combustibile
 railcraft.gui.bore.head=Testa
-railcraft.gui.bore.track=Rotaia
-railcraft.gui.box.aspect.action=Emetti un segnale di Pietrarossa in base all'aspetto
-railcraft.gui.box.capacitor.duration=Emetti un segnale di Pietrarossa per @d secondi
-railcraft.gui.box.controller.aspect.default=Aspetto Standard:
-railcraft.gui.box.controller.aspect.redstone=Aspetto della Redstone:
-railcraft.gui.cart.tnt.fuse=Fusibile
-railcraft.gui.cart.track.relayer.pattern=Modello
+railcraft.gui.bore.track=Binari
+
+#Segnali
+railcraft.gui.box.aspect.action=Emette pietrarossa se
+railcraft.gui.box.capacitor.duration=Emette pietrarossa per @ds
+railcraft.gui.box.capacitor.immediate=Rising edge
+railcraft.gui.box.capacitor.immediate.tip=Attiva il cronometro non appena riceve segnale.
+railcraft.gui.box.capacitor.delayed=Falling Edge
+railcraft.gui.box.capacitor.delayed.tip=Attiva il cronometro solo al termine del segnale.
+railcraft.gui.box.controller.aspect.default=Aspetto normale
+railcraft.gui.box.controller.aspect.redstone=Con pietrarossa
+
+#Vagoni
+railcraft.gui.cart.tnt.fuse=Spoletta
+railcraft.gui.cart.track.relayer.pattern=Schema
 railcraft.gui.cart.track.relayer.stock=Scorta
-railcraft.gui.cart.undercutter.pattern=Modello
-railcraft.gui.cart.undercutter.sides=Lati
+railcraft.gui.cart.undercutter.pattern=Modelli
+railcraft.gui.cart.undercutter.sides=Ai lati
 railcraft.gui.cart.undercutter.stock=Scorta
-railcraft.gui.cart.undercutter.under=Sotto
-railcraft.gui.coke.oven=Forno per carburante
+railcraft.gui.cart.undercutter.under=Massicciata
+
+railcraft.gui.coke.oven=Cokeria per locomozione
+
+#Detector
 railcraft.gui.detector.item.analog=Analogo
 railcraft.gui.detector.item.anything=Qualsiasi
 railcraft.gui.detector.item.at_least=Almeno
@@ -219,420 +405,789 @@ railcraft.gui.detector.item.empty=Vuoto
 railcraft.gui.detector.item.exactly=Esattamente
 railcraft.gui.detector.item.filtered=Filtrato
 railcraft.gui.detector.item.full=Pieno
-railcraft.gui.detector.item.not_empty=Non Vuoto
-railcraft.gui.detector.loco.primary=Colore Primario
+railcraft.gui.detector.item.greater_than=Più di
+railcraft.gui.detector.item.less_than=Meno di
+railcraft.gui.detector.item.not_empty=Non vuoto
+railcraft.gui.detector.loco.primary=Colore principale
 railcraft.gui.detector.loco.secondary=Colore secondario
-railcraft.gui.detector.tank.tip.void=Match any amount
-railcraft.gui.detector.tank.tip.empty=Abbina taniche vuote
-railcraft.gui.detector.tank.tip.not.empty=Abbina taniche non vuote
-railcraft.gui.detector.tank.tip.full=Abbina taniche piene
-railcraft.gui.detector.tank.tip.quarter=Abbina taniche più di un quarto piene
-railcraft.gui.detector.tank.tip.half=Abbina taniche più di metà piene
-railcraft.gui.detector.tank.tip.most=Abbina taniche più di tre quarti piene
-railcraft.gui.detector.tank.tip.less.than.quarter=Abbina taniche meno di un quarto piene
-railcraft.gui.detector.tank.tip.less.than.half=Abbina taniche meno di metà piene
-railcraft.gui.detector.tank.tip.less.than.most=Abbina taniche meno di tre quarti piene
-railcraft.gui.detector.tank.tip.less.than.full=Abbina taniche non piene
-railcraft.gui.detector.tank.tip.analog=Emetti un segnale di Pietrarossa analogo\n alla quantità di liquido nella tanica
-railcraft.gui.detector.villager.any=Qualunque
-railcraft.gui.detector.villager.equals=Equivale
+railcraft.gui.detector.tank.tip.analog=Segnale di pietrarossa analogico\n proporzionale al livello del contenuto
+railcraft.gui.detector.tank.tip.empty=Cisterne vuote
+railcraft.gui.detector.tank.tip.full=Cisterne piene
+railcraft.gui.detector.tank.tip.half=Cisterne cariche oltre la metà
+railcraft.gui.detector.tank.tip.less.than.full=Cisterne piene sotto al massimo
+railcraft.gui.detector.tank.tip.less.than.half=Cisterne piene meno della metà
+railcraft.gui.detector.tank.tip.less.than.most=Cisterne piene meno di 3/4
+railcraft.gui.detector.tank.tip.less.than.quarter=Cisterne piene meno di un quarto
+railcraft.gui.detector.tank.tip.most=Cisterne piene oltre i 3/4
+railcraft.gui.detector.tank.tip.not.empty=Cisterne non vuote
+railcraft.gui.detector.tank.tip.quarter=Cisterne piene oltre un quarto
+railcraft.gui.detector.tank.tip.void=Qualsiasi cisterna
+railcraft.gui.detector.train.size=Lunghezza totale in vagoni: @d
+railcraft.gui.detector.villager.any=Tutti
+railcraft.gui.detector.villager.equals=Uguale
 railcraft.gui.detector.villager.none=Nessuno
-railcraft.gui.detector.villager.not=No
-railcraft.gui.energy.loader.empty=Mantenere vuoto
-railcraft.gui.energy.loader.fill=Riempito
-railcraft.gui.feed.station.feed=Cibo
-railcraft.gui.filter=Filtro
-railcraft.gui.filters=Filtri
-railcraft.gui.filters.carts=Minecarts
-railcraft.gui.goggles.aura.anchor=Ancore
-railcraft.gui.goggles.aura.none=Nessuno
-railcraft.gui.goggles.aura.tracking=Localizzazioni
-railcraft.gui.goggles.aura.tuning=Collegamenti
-railcraft.gui.goggles.mode=Aura corrente: @s
-railcraft.gui.goggles.tip=Utilizza mentre è in mano per cambiare aura
+railcraft.gui.detector.villager.not=Tranne
+
+railcraft.gui.electric.meter.charge=Carica: @.2fc | Consumo: @.2fc/t | Dispersione: @.2fc/t
+
+railcraft.gui.energy.loader.empty=Ferma i vuoti
+railcraft.gui.energy.loader.fill=Riempi
+railcraft.gui.energy.unloader.wait=Completa
+
+#Emblemi standard
+railcraft.gui.engrave.entercode=Inserisci il codice di attivazione:
+railcraft.gui.engrave.getmore1=Visita i siti seguenti
+railcraft.gui.engrave.getmore2=per trovare nuovi codici!
+railcraft.gui.engrave.openunlock=Sblocca emblemi
+railcraft.gui.engrave.unlock.exists=Codice duplicato!
+railcraft.gui.engrave.unlock.fail=Errore!
+railcraft.gui.engrave.unlock.success=Completato!
+railcraft.gui.engrave.unlock=Sblocca!
+railcraft.gui.engrave=Incidi
+
+railcraft.gui.feed.station.feed=Mangime
+
+#Dove sta?
+railcraft.gui.filter=Filtra
+railcraft.gui.filters.carts=Vagoni
+railcraft.gui.filters=Filtro
+
+railcraft.gui.goggles.aura.anchor=Ancoraggio dimensionale
+railcraft.gui.goggles.aura.none=Spento
+railcraft.gui.goggles.aura.signalling=Segnalamento
+railcraft.gui.goggles.aura.surveying=Sezionamento
+railcraft.gui.goggles.aura.tracking=Tracciamento termico
+railcraft.gui.goggles.aura.tuning=Sintonizzazione
+railcraft.gui.goggles.mode=§7*Modalità @s*
+railcraft.gui.goggles.tip=Prendili in mano per cambiare funzione
+
 railcraft.gui.help=Aiuto
-railcraft.gui.item.loader.all=Tutti
-railcraft.gui.item.loader.buffer=Buffer
+
+#Mmmmmmm
+railcraft.gui.ic2.energy.rate=Rate: @d EU
+
+#Carico merci
+railcraft.gui.item.loader.all.tip=Carica tutti gli oggetti corrispondenti
+railcraft.gui.item.loader.all=Tutto
+railcraft.gui.item.loader.buffer=Contenuto
+railcraft.gui.item.loader.complete.tip=Emetti pietrarossa al termine
 railcraft.gui.item.loader.complete=Completo
+railcraft.gui.item.loader.excess.tip=Mantieni gli oggetti nel filtro\n carica il resto
 railcraft.gui.item.loader.excess=Eccesso
-railcraft.gui.item.loader.partial=Parziale
+railcraft.gui.item.loader.immediate.tip=Emetti pietrarossa se nessun\n oggetto è stato caricato
 railcraft.gui.item.loader.immediate=Immediato
+railcraft.gui.item.loader.manual.tip=Non emettere mai pietrarossa
 railcraft.gui.item.loader.manual=Manuale
-railcraft.gui.item.loader.stock=Fornisce
-railcraft.gui.item.loader.transfer=Trasferisce
-railcraft.gui.item.loader.all.tip=Muovi tutti gli oggetti corrispondenti
-railcraft.gui.item.loader.complete.tip=Emetti un segnale di Pietrarossa al termine
-railcraft.gui.item.loader.excess.tip=Mantieni gli oggetti nel filtro\n muovi il resto
-railcraft.gui.item.loader.partial.tip=Emetti un segnale di Pietrarossa se nessun oggetto è stato\n mosso e il Minecart non è vuoto
-railcraft.gui.item.loader.immediate.tip=Emetti un segnale di Pietrarossa se nessun oggetto è stato\n mosso
-railcraft.gui.item.loader.manual.tip=Non emettere mai segnali di Pietrarossa
-railcraft.gui.item.loader.stock.tip=Muovi gli oggetti finche la\n destinazione corrisponde al filtro
-railcraft.gui.item.loader.transfer.tip=Muovi esattamente tanti\n oggetti quanti sono nel filtro
+railcraft.gui.item.loader.partial.tip=Emetti pietrarossa se nessun oggetto\n è stato caricato ed il vagone non è vuoto
+railcraft.gui.item.loader.partial=Parziale
+railcraft.gui.item.loader.stock.tip=Moved items until the\n destination matches filter
+railcraft.gui.item.loader.stock=Carico
+railcraft.gui.item.loader.transfer.tip=Carica esattamente la quantità\n di oggetti indicata nel filtro
+railcraft.gui.item.loader.transfer=Preciso
+
+#Aggancio vagoni
+railcraft.gui.link.broken=§7*Ottimo, sgancio avvenuto*
+railcraft.gui.link.created=§7*E anche questo è agganciato*
+railcraft.gui.link.failed=§7*Mannaggia alle zampe di gatto, non si aggancia!*
+railcraft.gui.link.started=§7*Preso il gancio...*
+
+#Cisterne (non prende i tips??)
 railcraft.gui.liquid.capacity=Capacità
-railcraft.gui.liquid.loader.empty=Mantenere vuoto
-railcraft.gui.liquid.loader.fill=Riempito
-railcraft.gui.liquid.unloader.empty=Vuoto
-railcraft.gui.locomotive.mode.idle=Inattivo
-railcraft.gui.locomotive.mode.running=In movimento
+railcraft.gui.liquid.loader.empty.tip=Ferma le cisterne vuote per il riempimento
+railcraft.gui.liquid.loader.empty=Trattieni i vuoti
+railcraft.gui.liquid.loader.fill.tip=Trattieni le cisterne fino a riempimento completo
+railcraft.gui.liquid.loader.fill=Pieno carico
+railcraft.gui.liquid.loader.immediate.tip=Emetti pietrarossa se nessun\n liquido è stato caricato
+railcraft.gui.liquid.loader.immediate=Immediato
+railcraft.gui.liquid.loader.manual.tip=Non emettere mai pietrarossa
+railcraft.gui.liquid.loader.manual=Manuale
+railcraft.gui.liquid.unloader.empty.tip=Trattieni le cisterne fino\n a completo svuotamento
+railcraft.gui.liquid.unloader.empty=Scarico totale
+railcraft.gui.liquid.unloader.immediate.tip=Emetti pietrarossa se nessun\n liquido è stato scaricato
+railcraft.gui.liquid.unloader.immediate=Immediato
+railcraft.gui.liquid.unloader.manual.tip=Non emettere mai pietrarossa
+railcraft.gui.liquid.unloader.manual=Manuale
+
+#Locomotive
+railcraft.gui.locomotive.mode.idle=Minimo
+railcraft.gui.locomotive.mode.running=Marcia
 railcraft.gui.locomotive.mode.shutdown=Spento
-railcraft.gui.locomotive.steam.tip.button.mode.running=Fa muovere la Locomotiva
-railcraft.gui.locomotive.steam.tip.button.mode.idle=La locomotiva riduce l'uso del carburante\n, ma trattiene il suo calore.\n Se il treno è sostenuto da una rotaia,\n agisce come da Inattivo.
-railcraft.gui.locomotive.steam.tip.button.mode.shutdown=Spegne la Locomotiva.\n Interrompe tutti i movimenti e\n comincia il processo di raffreddamento.\n Quest'ultimo può impiegare del tempo.
-railcraft.gui.locomotive.tip.button.locked=Questo Minecart è bloccato a\n {owner}.\n Accetterà soltanto Biglietti\n creati da lui o da un Amministratore.
-railcraft.gui.locomotive.tip.button.unlocked=Clicca per bloccare la Locomotiva.\n Una volta bloccata, accetterà\n solo Biglietti\n creati da te o da un Amministratore.
-railcraft.gui.locomotive.tip.slot.ticket=Inserire Biglietto
+railcraft.gui.locomotive.electric.tip.button.mode.running=Mette in movimento il mezzo
+railcraft.gui.locomotive.electric.tip.button.mode.shutdown=Arresta il movimento del mezzo
+railcraft.gui.locomotive.fuelelectric.tip.button.mode.running=Mette in movimento il mezzo
+railcraft.gui.locomotive.fuelelectric.tip.button.mode.idle=Continua la produzione di corrente e\nriduce il consumo di combustibile,\n mantenendo in temperatura il motore
+railcraft.gui.locomotive.fuelelectric.tip.button.mode.shutdown=Arresta il movimento del mezzo ed\n inizia il raffreddamento del motore
+railcraft.gui.locomotive.steam.tip.button.mode.running=Mette in movimento il mezzo
+railcraft.gui.locomotive.steam.tip.button.mode.idle=Ricuce il consumo di combustibile,\n mantenendo in temperatura la caldaia
+railcraft.gui.locomotive.steam.tip.button.mode.shutdown=Arresta il movimento del mezzo ed\n inizia il raffreddamento della caldaia
+railcraft.gui.locomotive.tip.button.locked=Questa locomotiva è bloccata da {owner}.\n Accetta soltanto biglietti emessi dal proprietario
+railcraft.gui.locomotive.tip.button.private=Questa locomotiva di {owner} è privata.\n Può venire utilizzato soltanto dal proprietario
+railcraft.gui.locomotive.tip.button.unlocked=Premi per bloccare la locomotiva.\n Accetterà soltanto biglietti emessi da te
+railcraft.gui.locomotive.tip.item.emblem=§oLogo:§r @s
+#railcraft.gui.locomotive.tip.item.model.default=Default Model
+railcraft.gui.locomotive.tip.item.model=§oModello:§r @s
 railcraft.gui.locomotive.tip.item.owner=§oProprietario:§r @s
-railcraft.gui.locomotive.tip.item.primary=§oColore Primario:§r @s
-railcraft.gui.locomotive.tip.item.secondary=§oColore Secondario:§r @s
+railcraft.gui.locomotive.tip.item.primary=§oColore principale:§r @s
+railcraft.gui.locomotive.tip.item.secondary=§oColore secondario:§r @s
 railcraft.gui.locomotive.tip.item.whistle=§oTono del fischio:§r @s
-railcraft.gui.mag.glass.placedby=%1$s è stato piazzato da %2$s
-railcraft.gui.tip.button.lock.locked=Questo macchinario è bloccato a\n {owner}.\n Solo il proprietario e l'Amministratore\n può manipolarlo.
-railcraft.gui.tip.button.lock.unlocked=Clicca per bloccare il macchinario.\n Una volta bloccato, può\n essere accesso solo da\n te o da un Amministratore.
-railcraft.gui.tip.button.lock.notowner=Non sei il\n proprietario di questo macchinario.\n Appartiene a\n {owner}.
-railcraft.gui.rolling.machine.tip.craft=§e§o-clicca per fabbricare-
-railcraft.gui.steam.oven=Forno a Vapore
-railcraft.gui.surveyor.abandon=Ispezione del Blocco Segnale abbandonata
-railcraft.gui.surveyor.begin=Inizializzazione ispezione Blocco Segnale
-railcraft.gui.surveyor.invalid=Blocco Segnale non valido
-railcraft.gui.surveyor.lost=Il primo Segnale non esiste più, abbandono ispezione
-railcraft.gui.surveyor.success=Blocco segnale definito con successo
-railcraft.gui.surveyor.track=Nessuna traccia trovata vicino %s
-railcraft.gui.surveyor.unloaded=Il primo Segnale non è in un Chunk caricato
-railcraft.gui.surveyor.wrong=Blocco segnale non valido
-railcraft.gui.switch.motor.action=Scambia in base all'aspetto
-railcraft.gui.tank.iron=Tanica di Ferro
-railcraft.gui.tank.steel=Tanica di Acciaio
-railcraft.gui.tank.water=Tanica d'Acqua
-railcraft.gui.ticks=ticks
-tile.railcraft.machine.alpha.blast.furnace.tip=Multi-Blocco: 3x4x3 (Vuoto)
-tile.railcraft.machine.beta.boiler.firebox.liquid.tip=Multi-Blocco: Grandezza variabile, Ultimo livello\n Dimensioni: 1x1, 2x2, 3x3
-tile.railcraft.machine.beta.boiler.firebox.solid.tip=Multi-Blocco: Grandezza variabile, Ultimo livello\n Dimensioni: 1x1, 2x2, 3x3
-tile.railcraft.machine.beta.boiler.tank.pressure.high.tip=Multi-Blocco: Grandezza variabile, Sopra Camera a combustibile\n Dimensioni: 1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3
-tile.railcraft.machine.beta.boiler.tank.pressure.low.tip=Multi-Blocco: Grandezza variabile, Sopra Camera a combustibile\n Dimensioni: 1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3
-tile.railcraft.machine.beta.chest.void.tip=Elimina oggetti
-tile.railcraft.machine.alpha.coke.oven.tip=Multi-Blocco: 3x3x3 (Vuoto)
-item.railcraft.tool.crowbar.tip=§oright clicca mentre ti accucci per collegare i Minecart
-tile.railcraft.machine.alpha.rock.crusher.tip=Multi-Blocco: 3x2x2
-tile.railcraft.machine.alpha.steam.oven.tip=Multi-Blocco: 2x2x2
-tile.railcraft.machine.beta.tank.iron.gauge.tip=Multi-Blocco: Deve essere agli ultimi\n due livelli per far uscire liquidi.
-tile.railcraft.machine.beta.tank.iron.valve.tip=Multi-Blocco: Grandezza variabile, Vuoto\n Altezze: 4, 5, 6, 7, 8\n Diametri: 3, 5, 7, 9
-tile.railcraft.machine.beta.tank.iron.wall.tip=Multi-Blocco: Grandezza variabile, Vuoto\n Altezze: 4, 5, 6, 7, 8\n Diametri: 3, 5, 7, 9
-tile.railcraft.machine.beta.tank.steel.gauge.tip=Multi-Blocco: Deve essere agli ultimi\n due livelli per far uscire liquidi.
-tile.railcraft.machine.beta.tank.steel.valve.tip=Multi-Blocco: Grandezza variabile, Vuoto\n Altezze: 4, 5, 6, 7, 8\n Diametri: 3, 5, 7, 9
-tile.railcraft.machine.beta.tank.steel.wall.tip=Multi-Blocco: Grandezza variabile, Vuoto\n Altezze: 4, 5, 6, 7, 8\n Diametri: 3, 5, 7, 9
-tile.railcraft.machine.alpha.tank.water.tip=Multi-Blocco: 3x3x3 (Vuoto)
-tile.railcraft.machine.alpha.turbine.tip=Multi-Blocco: 3x2x2
-railcraft.gui.track.embarking.radius=Raggio
-railcraft.gui.track.priming.fuse=Miccia = @d tick
-railcraft.gui.tuner.start=Iniziato l'accoppiamento %s con un Ricevitore
-railcraft.gui.tuner.stop=Fermato l'accoppiamento %s con un Ricevitore
-railcraft.gui.tuner.success=%1$s accoppiato con successo con %2$s
-railcraft.gui.tuner.abandon.chunk=Il Controller non è in Chunk attualmente caricato, abbandono la sincronizzazione
-railcraft.gui.tuner.abandon.gone=Il Controller non esiste più, abbandono la sincronizzazione
-railcraft.gui.turbine=Turbina a vapore
-railcraft.gui.turbine.output=Uscita: @d%%
-railcraft.gui.turbine.rotor=Rotore:
-
-item.railcraft.upgrade.lapotron=Aggiornamento lapotron
-
-item.railcraft.ingot.steel.name=Lingotto d'Acciaio
-
-item.synthetic=Sintetico
-
-railcraft.keybind.loco.faster=Chiave più veloce per Locomotiva
-railcraft.keybind.loco.slower=Chiave più lenta per Locomotiva
-railcraft.keybind.loco.mode=Chiave modalità per Locomotiva
-railcraft.keybind.loco.whistle=Chiave del fischio per Locomotiva 
-
-item.railcraft.fluid.creosote.bottle.name=Bottiglia di creosoto
-item.railcraft.fluid.creosote.bucket.name=Secchio di creosoto
-item.railcraft.fluid.creosote.can.name=Tanica di creosoto
-item.railcraft.fluid.creosote.cell.name=Cella di creosoto
-fluid.creosote=Olio di creosoto
-item.railcraft.fluid.creosote.refactory.name=Capsula di creosoto
-item.railcraft.fluid.creosote.wax.name=Capsula di creosoto
-fluid.steam=Vapore
-
-tile.railcraft.machine.alpha.anchor.admin.name=Ancora dell'amministratore
-tile.railcraft.machine.alpha.anchor.personal.name=Ancora personale
-tile.railcraft.machine.alpha.anchor.world.name=Ancora del mondo
-tile.railcraft.machine.alpha.blast.furnace.name=Mattone dell'alto forno
-tile.railcraft.machine.alpha.coke.oven.name=Mattone del forno per carburante
-tile.railcraft.machine.alpha.feed.station.name=Mangiatoia
-tile.railcraft.machine.alpha.rock.crusher.name=Trita-rocce
-tile.railcraft.machine.alpha.rolling.machine.name=Macchinario di rodaggio
-tile.railcraft.machine.alpha.smoker.name=Fumatore
-tile.railcraft.machine.alpha.steam.oven.name=Forno a Vapore
-tile.railcraft.machine.alpha.tank.water.name=Rivestimento per la tanica dell'Acqua
-tile.railcraft.machine.alpha.turbine.name=Alloggio per la turbina a Vapore
-
-tile.railcraft.machine.beta.anchor.sentinel.name=Ancora sentinella
-tile.railcraft.machine.beta.boiler.firebox.liquid.name=Camera a combustibile liquido
-tile.railcraft.machine.beta.boiler.firebox.solid.name=Camera a combustibile solido
-tile.railcraft.machine.beta.boiler.tank.pressure.high.name=Bollitore ad alta pressione
-tile.railcraft.machine.beta.boiler.tank.pressure.low.name=Bollitore a bassa pressione
-tile.railcraft.machine.beta.chest.void.name=Cassa del nulla
-tile.railcraft.machine.beta.engine.steam.high.name=Motore industriale a Vapore
-tile.railcraft.machine.beta.engine.steam.hobby.name=Motore amatoriale a Vapore
-tile.railcraft.machine.beta.engine.steam.low.name=Motore commerciale a Vapore
-tile.railcraft.machine.beta.tank.iron.gauge.name=Indicatore tanica di Ferro
-tile.railcraft.machine.beta.tank.iron.valve.name=Valvola della tanica di Ferro
-tile.railcraft.machine.beta.tank.iron.wall.name=Parete della tanica di Ferro
-tile.railcraft.machine.beta.tank.steel.gauge.name=Indicatore tanica di Acciaio
-tile.railcraft.machine.beta.tank.steel.valve.name=Valvola della tanica di Acciaio
-tile.railcraft.machine.beta.tank.steel.wall.name=Parete della tanica di Acciaio
-
-tile.railcraft.machine.gamma.dispenser.cart.name=Distributore di Minecarts
-tile.railcraft.machine.gamma.dispenser.train.name=Distributore di treni
-tile.railcraft.machine.gamma.loader.energy.name=Caricatore di energia
-tile.railcraft.machine.gamma.loader.item.advanced.name=Caricatore d'oggetti avanzato
-tile.railcraft.machine.gamma.loader.item.name=Caricatore d'oggetti
-tile.railcraft.machine.gamma.loader.liquid.name=Caricatore di liquidi
-tile.railcraft.machine.gamma.unloader.energy.name=Scaricatore di energia
-tile.railcraft.machine.gamma.unloader.item.advanced.name=Scaricatore d'oggetti avanzato
-tile.railcraft.machine.gamma.unloader.item.name=Scaricatore d'oggetti
-tile.railcraft.machine.gamma.unloader.liquid.name=Scaricatore di liquidi
-
-item.railcraft.nugget.iron.name=Pepita di Ferro
-item.railcraft.nugget.steel.name=Pepita di Acciaio
+railcraft.gui.locomotive.tip.slot.ticket=Inserisci il biglietto
 
 
-tile.railcraft.ore.dark.diamond.name=Diamante Oscuro Grezzo
-tile.railcraft.ore.dark.emerald.name=Smeraldo Oscuro Grezzo
-tile.railcraft.ore.dark.lapis.name=Lapislazzuli Oscuri Grezzi
-tile.railcraft.ore.saltpeter.name=Minerale Salnitro
-tile.railcraft.worldlogic.name=Spawner del Minerale Salnitro
-tile.railcraft.ore.sulfur.name=Minerale di Zolfo
+railcraft.gui.mag.glass.aspect=§7*L'aspetto di questo segnale è decisamente %s*
+railcraft.gui.mag.glass.aspect.dual=§7*Il segnale superiore è %1$s, mentre quello inferiore è %2$s*
+railcraft.gui.mag.glass.placedby=§7*Gli indizi sembrano suggerire che questo %1$s sia stato messo da %2$s*
 
-item.railcraft.part.circuit.controller.name=Circuito di controllo
-item.railcraft.part.circuit.receiver.name=Circuito ricevente
-item.railcraft.part.circuit.signal.name=Circuito del segnale
-item.railcraft.part.gear.gold.plate.name=Ingranaggio placcato in Oro
-item.railcraft.part.gear.iron.name=Ingranaggio di Ferro
-item.railcraft.part.gear.steel.name=Ingranaggio d'Acciaio
-item.railcraft.part.plate.iron.name=Placca di Ferro
-item.railcraft.part.plate.steel.name=Placca d'Acciaio
-item.railcraft.part.plate.tin.name=Placca di Stagno
-item.railcraft.part.rail.advanced.name=Rotaia avanzata
-item.railcraft.part.rail.reinforced.name=Rotaia rinforzata
-item.railcraft.part.rail.speed.name=Rotaia ad alta velocità
-item.railcraft.part.rail.standard.name=Rotaia standard
-item.railcraft.part.rail.wood.name=Rotaia di Legno
-item.railcraft.part.railbed.stone.name=Base della rotaia in Pietra
-item.railcraft.part.railbed.wood.name=Base della rotaia in Legno
-item.railcraft.part.rebar.name=Barra di rinforzo
-item.railcraft.part.signal.lamp.name=Segnale luminoso
-item.railcraft.part.tie.stone.name=Traversina di Pietra
-item.railcraft.part.tie.wood.name=Traversina di Legno
-item.railcraft.part.turbine.blade.name=Pala della turbina
-item.railcraft.part.turbine.disk.name=Disco della turbina
-item.railcraft.part.turbine.rotor.name=Turbina a rotore
+railcraft.gui.rolling.machine.tip.craft=§e§o-Tocca per avviare la produzione-
 
-tile.railcraft.post.metal.black.name=Post metallico nero
-tile.railcraft.post.metal.blue.name=Post metallico blu
-tile.railcraft.post.metal.brown.name=Post metallico marrone
-tile.railcraft.post.metal.cyan.name=Post metallico azzurro
-tile.railcraft.post.metal.gray.name=Post metallico grigio
-tile.railcraft.post.metal.green.name=Post metallico verde
-tile.railcraft.post.metal.light.blue.name=Post metallico celeste
-tile.railcraft.post.metal.light.gray.name=Post metallico grigio chiaro
-tile.railcraft.post.metal.lime.name=Post metallico verde chiaro
-tile.railcraft.post.metal.magenta.name=Post metallico magenta
-tile.railcraft.post.metal.orange.name=Post metallico arancione
-tile.railcraft.post.metal.pink.name=Post metallico rosa
-tile.railcraft.post.metal.purple.name=Post metallico viola
-tile.railcraft.post.metal.red.name=Post metallico rosso
-tile.railcraft.post.metal.white.name=Post metallico bianco
-tile.railcraft.post.metal.yellow.name=Post metallico giallo
-tile.railcraft.post.metal.unpainted.name=Post metallico
-tile.railcraft.post.stone.name=Post di Pietra
-tile.railcraft.post.wood.name=Post di Legno
-
-railcraft.gui.routing.logic.blank=Tavolo vuoto
-railcraft.gui.routing.logic.insufficient.operands=Operandi insufficienti
+#Instradamento (parzialmente da fare)
+railcraft.gui.routing.logic.blank=Tabella vuota!
+railcraft.gui.routing.logic.insufficient.operands=Operandi insufficienti!
+railcraft.gui.routing.logic.malformed.syntax=Sintassi errata!
+railcraft.gui.routing.logic.regex.invalid=Espressione regolare non valida!
+railcraft.gui.routing.logic.regex.unsupported=Espressione regolare non supportata
 railcraft.gui.routing.logic.unrecognized.keyword=Parola chiave non riconosciuta
-railcraft.gui.routing.slot.label=Tavolo d'avviamento
-railcraft.gui.routing.table.editor=Ultima modifica di @s
-railcraft.gui.routing.table.manual.title=Manuale d'avviamento
-railcraft.gui.routing.table.manual.page1=Quando piazzato in un Rilevatore d'avviamento o Leva di avviamento, il Tavolo d'avviamento definirà una serie di regole usate per corrispondere con ogni Locomotiva che passa. Queste regole sono definite utilizzando una semplice sintassi logica che ti permetterà di creare regole semplici o complesse, a tuo piacimento. La sintassi è uno script con la Notazione Polacca, quindi gli Operatori sono seguiti dagli Operandi. E' ammessa solo una parola chiave per riga. Se nessun operatore è specificato, viene preso come OPPURE (OR). I Tavoli d'avviamento possono essere copiati piazzandone duo e più in una griglia di fabbricazione.
-railcraft.gui.routing.table.manual.page2=Parole chiave - Operatori:\n   AND - Due operandi, Entrambi devono essere positivi.\n   OR - Due operandi, uno deve essere positivo.\n   NOT - Inverte l'operando successivo.
-railcraft.gui.routing.table.manual.page3=Parole chiave - Condizioni:\n   Dest=<stringa>\n      Se la stringa della destinazione della Locomotiva\n      inizia con questa stringa,\n      la condizione è positiva.\n   Owner=<username>\n      Positivo se la Locomotiva appartiene\n      a questa persona. 
-railcraft.gui.routing.table.manual.page4=Parole chiave - Condizioni:\n   Color=<primario>,<secondario>\n      Positivo se il colore primario\n      e secondario corrispondono.\n      Accetta "Any" come un jolly.\n      Colori: Black, Red, Green, Brown, Blue,\n      Purple, Cyan, LightGray, Gray, Pink, Lime,\n      Yellow, LightBlue, Magenta, Orange, White 
-railcraft.gui.routing.table.manual.page5=Esempi di script:\n   Dest=TheFarLands\n   Color=Black,Red\n   AND\n   NOT\n   Owner=pazzoeo\n   Dest=SecretHideout/OceanEntrance
-railcraft.gui.routing.table.manual.page6=Risultato:\n   Lo script nella pagina precedente abbinerà\n   una Locomotiva con la destinazione\n   "TheFarLands/Milliways",\n   o che sia pitturata di nero e rosso,\n   o che la sua destinazione è\n   "SecretHideout/OceanEntrance",\n   ma solo se non è di pazzoeo.
+railcraft.gui.routing.slot.label=Tabella d'instradamento
+railcraft.gui.routing.table.editor=Ultima modifica da parte di @s
+railcraft.gui.routing.table.manual.numPages=11
+railcraft.gui.routing.table.manual.page1=The Routing Table when placed in a Routing Detector or Switch will define a set of rules that are used to match against any passing Locomotive. These rules are define using a simple logic syntax that allows you to create rules as simple or complex as you like. The syntax is a Prefix Notation script, the Operators are followed by the Operands. Only one keyword is allowed per line. If no Operator is specified, OR is assumed. Routing Tables can be copied by placing two or more in a crafting grid.
+railcraft.gui.routing.table.manual.page2=Operator Keywords:\n   AND - Two Operands, both must be true.\n   OR - Two Operands, one must be true.\n   NOT - Invert the following Operand.
+railcraft.gui.routing.table.manual.page3=Condition Keywords:\n   Dest=<string>\n      If the Locomotive's Destination\n      string starts with this string,\n      the condition is true.\n      "Dest=null" will match carts\n      with no destination.\n   Owner=<username>\n      True if the Locomotive belongs\n      to this person.
+railcraft.gui.routing.table.manual.page4=Condition Keywords:\n   Name=<entityname>\n      True if it matches the\n      Minecart's name.\n      "Name=null" will match carts\n      with no custom name.\n   Type=<modid:itemname>\n      True if it matches the\n      Minecart's item name.
+railcraft.gui.routing.table.manual.page5=Condition Keywords:\n   Riding=<username>\n      True if the Train is ridden\n      by this person.\n   Ridden=<true/false>\n      True if the Train is\n      being ridden by a player.
+railcraft.gui.routing.table.manual.page6=Condition Keywords:\n   Color=<primary>,<secondary>\n      True if the Locomotive's primary\n      and secondary colors match.\n      Accepts "Any" as a wildcard.\n      Colors: Black, Red, Green, Brown, Blue,\n      Purple, Cyan, LightGray, Gray, Pink, Lime,\n      Yellow, LightBlue, Magenta, Orange, White\n   NeedsRefuel=<true/false>\n      If the Locomotive is low on Fuel\n      or Water this will divert it.
+railcraft.gui.routing.table.manual.page7=Condition Keywords:\n   Redstone=<true/false>\n      True if the Routing Block\n      is being powered by Redstone.
+railcraft.gui.routing.table.manual.page8=Condition Keywords:\n   Loco=<string>\n      True if locomotive matches parameter string.\n      Accepted strings: electric, steam, none.\n      Using parameter none will only return true if there is no locomotive.
+railcraft.gui.routing.table.manual.page9=Example Script:\n   Dest=TheFarLands\n   Color=Black,Red\n   AND\n   NOT\n   Owner=RichardG\n   Dest=SecretHideout/OceanEntrance
+railcraft.gui.routing.table.manual.page10=Result:\n   The script on the previous page will\n   match a Locomotive with a destination\n   of "TheFarLands/Milliways",\n   or that is painted black and red,\n   or that has a destination of\n   "SecretHideout/OceanEntrance",\n   but only if its not owned by RichardG.
+railcraft.gui.routing.table.manual.page11=Regular Expressions:\n   Some Conditions support\n   Regular Expressions.\n   To use a regex, add a '?' before the '='.\n   Rules are standard Java Patterns.\nSupporting Conditions:\n   Dest, Name\nExample:\n   Dest?=.*Hill
+railcraft.gui.routing.table.manual.title=Routing Manual
 railcraft.gui.routing.table.name=Nome
-item.railcraft.routing.table.name=Tavolo d'avviamento
-item.railcraft.routing.ticket.gold.name=Biglietto rotaia dorato
-railcraft.gui.routing.ticket.line1=Questo biglietto è valido
-railcraft.gui.routing.ticket.line2=per le seguenti destinazioni:
-railcraft.gui.routing.ticket.manual.title=Sul Biglietto dorato
-railcraft.gui.routing.ticket.manual=Il biglietto dorato è un biglietto dagli usi illimitati Che può essere usato per usare ogni treno pubblico o il treno del creatore del biglietto. Può anche essere combinato insieme a della Carta per creare Biglietti da un singolo uso.
-railcraft.gui.routing.ticket.tip.blank=Biglietto vuoto
+railcraft.gui.routing.ticket.line1=Valido sull'intera Rete Ferroviaria Coloniale.
+railcraft.gui.routing.ticket.line2=Scrivi di seguito la destinazione del tuo viaggio
+railcraft.gui.routing.ticket.manual.title=Condizioni di viaggio
+railcraft.gui.routing.ticket.manual=L'Abbonamento Ferroviario Coloniale è un titolo di viaggio che consente spostamenti illimitati all'interno del territorio della Colonia, a bordo di treni pubblici o di proprietà del detentore del titolo di viaggio.
+railcraft.gui.routing.ticket.tip.blank=Nessuna destinazione
 railcraft.gui.routing.ticket.tip.dest=Destinazione:
-railcraft.gui.routing.ticket.tip.issuer=Creatore:
-railcraft.gui.routing.ticket.title=Biglietto dorato
-item.railcraft.routing.ticket.name=Biglietto della ferrovia
-railcraft.gui.routing.track.slot.label=Biglietto
-railcraft.gui.routing.track.tip.slot=Inserire biglietto dorato
-railcraft.gui.routing.tip.slot=Inserire Tavolo d'avviamento
-railcraft.gui.routing.type.private.tip=Avvierà\n solo Locomotive\n che appartengono a\n {owner}.
+railcraft.gui.routing.ticket.tip.issuer=Emittente:
+railcraft.gui.routing.ticket.title=Abbonamento
+railcraft.gui.routing.tip.slot=Inserisci una tabella d'instradamento
+railcraft.gui.routing.track.slot.label=Destinazione
+railcraft.gui.routing.track.tip.slot=Inserire tramite abbonamento
+railcraft.gui.routing.type.private.tip=Instraderà soltanto locomotive\n appartenenti a {owner}.
 railcraft.gui.routing.type.private=Ferrovia privata
-railcraft.gui.routing.type.public.tip=Avvierà ogni Locomotiva.
+railcraft.gui.routing.type.public.tip=Instraderà qualunque locomotiva
 railcraft.gui.routing.type.public=Ferrovia pubblica
 
-tile.railcraft.signal.block.signal.dual.name=Blocco segnale a doppia testa
-tile.railcraft.signal.block.signal.name=Blocco segnale
-tile.railcraft.signal.box.block.relay.name=Blocco scatola di ritardo del segnale
-tile.railcraft.signal.box.capacitor.name=Scatola di contenimento del segnale
-tile.railcraft.signal.box.controller.name=Scatola di controllo del segnale
-tile.railcraft.signal.box.receiver.name=Scatola ricevente il segnale
-tile.railcraft.signal.distant.name=Segnale distante
-tile.railcraft.signal.distant.dual.name=Segnale distante a doppia testa
-tile.railcraft.signal.switch.lever.name=Scambia-leve
-tile.railcraft.signal.switch.motor.name=Scambia-motori
-tile.railcraft.signal.switch.routing.name=Leva del motore d'avviamento
+railcraft.gui.steam.boiler=Caldaia a vapore
+railcraft.gui.steam.oven=Forno a Vapore
 
-tile.railcraft.slab.abyssal.brick.name=Lastra di Mattoni abissali
-tile.railcraft.slab.abyssal.fitted.name=Lastra di Mattoni abissali da muro
-tile.railcraft.slab.abyssal.block.name=Lastra di Blocco abissale
-tile.railcraft.slab.bleachedbone.brick.name=Lastra di Mattoni di Osso scolorito
-tile.railcraft.slab.bleachedbone.fitted.name=Lastra di Mattoni di Osso scolorito da muro
-tile.railcraft.slab.bleachedbone.block.name=Lastra di Blocco di Osso scolorito
-tile.railcraft.slab.bloodstained.brick.name=Lastra di Mattoni sporchi di sangue
-tile.railcraft.slab.bloodstained.fitted.name=Lastra di Mattoni sporchi di sangue da muro
-tile.railcraft.slab.bloodstained.block.name=Lastra di Blocco sporco di sangue
-tile.railcraft.slab.concrete.name=Lastra di Cemento
-tile.railcraft.slab.diamond.name=Lastra di Diamanti
-tile.railcraft.slab.frostbound.brick.name=Lastra di Mattoni legati al gelo
-tile.railcraft.slab.frostbound.fitted.name=Lastra di Mattoni legati al gelo da muro
-tile.railcraft.slab.frostbound.block.name=Lastra di Blocco legato al gelo
-tile.railcraft.slab.gold.name=Lastra d'Oro
-tile.railcraft.slab.ice.name=Lastra di Ghiaccio
-tile.railcraft.slab.infernal.brick.name=Lastra di Mattoni infernali
-tile.railcraft.slab.infernal.fitted.name=Lastra di Mattoni infernali da muro
-tile.railcraft.slab.infernal.block.name=Lastra di Blocco infernale
-tile.railcraft.slab.iron.name=Lastra di Ferro
-tile.railcraft.slab.quarried.brick.name=Lastra di Mattoni scavati
-tile.railcraft.slab.quarried.fitted.name=Lastra di Mattoni scavati da muro
-tile.railcraft.slab.quarried.block.name=Lastra di Blocco scavato
-tile.railcraft.slab.sandy.brick.name=Lastra di Mattoni scavati
-tile.railcraft.slab.sandy.fitted.name=Lastra di Mattoni scavati da muro
-tile.railcraft.slab.sandy.block.name=Lastra di Blocco scavato
-tile.railcraft.slab.snow.name=Lastra di Neve
+railcraft.gui.surveyor.abandon=§7*Sarà meglio lasciar perdere*
+railcraft.gui.surveyor.begin=§7*Iniziamo ad impostare la sezione di blocco...*
+railcraft.gui.surveyor.invalid=§7*Mmm, una sezione così non può andare bene*
+railcraft.gui.surveyor.lost=§7*Che fine ha fatto il segnale di partenza?!*
+railcraft.gui.surveyor.success=§7*Bene, questa sezione è stata definita*
+railcraft.gui.surveyor.track=§7*Non vedo binari nei paraggi... *
+railcraft.gui.surveyor.unloaded=§7*Ho perso il segnale di partenza, temo sia in un settore non caricato*
+railcraft.gui.surveyor.wrong=§7*Ma che ca... questo non è un segnle di blocco!*
 
-tile.railcraft.stair.abyssal.brick.name=Scalini di Mattoni abissali
-tile.railcraft.stair.abyssal.fitted.name=Scalini di Mattoni abissali da muro
-tile.railcraft.stair.abyssal.block.name=Scalini di Blocco abissale
-tile.railcraft.stair.bleachedbone.brick.name=Scalini di Mattoni di Osso scolorito
-tile.railcraft.stair.bleachedbone.fitted.name=Scalini di Mattoni di Osso scolorito da muro
-tile.railcraft.stair.bleachedbone.block.name=Scalini di Blocco di Osso scolorito
-tile.railcraft.stair.bloodstained.brick.name=Scalini di Mattoni sporchi di sangue
-tile.railcraft.stair.bloodstained.fitted.name=Scalini di Mattoni sporchi di sangue da muro
-tile.railcraft.stair.bloodstained.block.name=Scalini di Blocco sporco di sangue
-tile.railcraft.stair.concrete.name=Scalini di Cemento
-tile.railcraft.stair.diamond.name=Scalini di Diamanti
-tile.railcraft.stair.frostbound.brick.name=Scalini di Mattoni legati al gelo
-tile.railcraft.stair.frostbound.fitted.name=Scalini di Mattoni legati al gelo da muro
-tile.railcraft.stair.frostbound.block.name=Scalini di Blocco legato al gelo
-tile.railcraft.stair.gold.name=Scalini d'Oro
-tile.railcraft.stair.ice.name=Scalini di Ghiaccio
-tile.railcraft.stair.infernal.brick.name=Scalini di Mattoni infernali
-tile.railcraft.stair.infernal.fitted.name=Scalini di Mattoni infernali da muro
-tile.railcraft.stair.infernal.block.name=Scalini di Blocco infernale
-tile.railcraft.stair.iron.name=Scalini di Ferro
-tile.railcraft.stair.quarried.brick.name=Scalini di Mattoni scavati
-tile.railcraft.stair.quarried.fitted.name=Scalini di Mattoni scavati da muro
-tile.railcraft.stair.quarried.block.name=Scalini di Blocco scavato
-tile.railcraft.stair.sandy.brick.name=Scalini di Mattoni scavati
-tile.railcraft.stair.sandy.fitted.name=Scalini di Mattoni scavati da muro
-tile.railcraft.stair.sandy.block.name=Scalini di Blocco scavato
-tile.railcraft.stair.snow.name=Scalini di Neve
+railcraft.gui.switch.motor.action=Devia con aspetto
+railcraft.gui.switch.motor.redstone=Ign. pietrarossa
 
-item.railcraft.borehead.diamond.name=Testa in Diamante della scavatrice
-item.railcraft.borehead.iron.name=Testa in Ferro della scavatrice
-item.railcraft.borehead.steel.name=Testa in Acciaio della scavatrice
-item.railcraft.tool.crowbar.name=Piede di porco
-item.railcraft.tool.crowbar.reinforced.name=Piede di porco rinforzato
-item.railcraft.tool.magnifying.glass.name=Lente d'ingrandimento
-item.railcraft.tool.signal.tuner.name=Sintonizzatore del segnale
-item.railcraft.tool.steel.axe.name=Ascia d'Acciaio
-item.railcraft.tool.steel.hoe.name=Zappa d'Acciaio
-item.railcraft.tool.steel.pickaxe.name=Piccone d'Acciaio
-item.railcraft.tool.steel.shovel.name=Vanga d'Acciaio
-item.railcraft.tool.steel.sword.name=Spada d'Acciaio
-item.railcraft.tool.surveyor.name=Blocco ispettore del segnale
-item.railcraft.tool.whistle.tuner.name=Sintonizzatore del Fischio
+railcraft.gui.tank.iron=Serbatoio in ferro
+railcraft.gui.tank.steel=Serbatoio in acciaio
+railcraft.gui.tank.water=Torre dell'acqua
 
-tile.activatorRail.name=Rotaia attivatrice
-tile.railcraft.track.boarding.name=Rotaia di posteggio
-tile.railcraft.track.boarding.train.name=Rotaia di posteggio per treni
-tile.railcraft.track.buffer.stop.name=Rotaia d'arresto
-tile.railcraft.track.control.name=Rotaia di controllo
-tile.railcraft.track.coupler.name=Rotaia d'appaiamento
-tile.railcraft.track.decoupler.name=Rotaia di disappaiamento
-tile.detectorRail.name=Rotaia "detector"
-tile.railcraft.track.detector.direction.name=Rotaia "detector" direzionale
-tile.railcraft.track.disembarking.name=Rotaia di sbarco
-tile.railcraft.track.disposal.name=Rotaia di smaltimento
-tile.railcraft.track.elevator.name=Rotaia ascensore
-tile.railcraft.track.embarking.name=Rotaia d'imbarco
-tile.railcraft.track.gated.name=Rotaia d'uscita
-tile.railcraft.track.gated.oneway.name=Rotaia d'uscita a senso unico
-tile.railcraft.track.holding.name=Rotaia di stazionamento
-tile.railcraft.track.holding.train.name=Rotaia di stazionamento per treni
-tile.railcraft.track.junction.name=Rotaia di unione
-tile.railcraft.track.limiter.name=Rotaia Limitatrice
-tile.railcraft.track.lockdown.name=Rotaia Mantenitrice
-tile.railcraft.track.lockdown.train.name=Rotaia Mantenitrice per Treni
-tile.railcraft.track.locomotive.name=Rotaia per Locomotive
-tile.railcraft.track.launcher.name=Rotaia di lancio
-tile.railcraft.track.oneway.name=Rotaia a senso unico
-tile.goldenRail.name=Rotaia booster
-tile.railcraft.track.priming.name=Rotaia d'accensione
-tile.railcraft.track.reinforced.name=Rotaia rinforzata
-tile.railcraft.track.reinforced.boost.name=Rotaia booster rinforzata
-tile.railcraft.track.reinforced.junction.name=Rotaia di unione rinforzata
-tile.railcraft.track.reinforced.switch.name=Rotaia di scambio rinforzata
-tile.railcraft.track.reinforced.wye.name=Rotaia a stella rinforzata
-tile.railcraft.track.routing.name=Rotaia d'avviamento
-tile.railcraft.track.slow.name=Rotaia di Legno
-tile.railcraft.track.slow.boost.name=Rotaia booster di lLegno
-tile.railcraft.track.slow.junction.name=Rotaia di unione di Legno
-tile.railcraft.track.slow.switch.name=Rotaia di scambio di Legno
-tile.railcraft.track.slow.wye.name=Rotaia a stella di Legno
-tile.railcraft.track.speed.name=Rotaia ad alta velocità
-tile.railcraft.track.speed.boost.name=Rotaia boosters ad alta velocità
-tile.railcraft.track.speed.switch.name=Rotaia di scambio ad alta velocità
-tile.railcraft.track.speed.transition.name=Rotaia di transizione ad alta velocità
-tile.railcraft.track.speed.wye.name=Rotaia a stella ad alta velocità
-tile.rail.name=Rotaia
-tile.railcraft.track.suspended.name=Rotaia sospesa
-tile.railcraft.track.switch.name=Rotaia di scambio
-tile.railcraft.track.whistle.name=Rotaia per il fischio
-tile.railcraft.track.wye.name=Rotaia a stella
+railcraft.gui.ticks=tick
 
-tile.railcraft.wall.abyssal.brick.name=Muretto di Mattoni abissali
-tile.railcraft.wall.bleachedbone.brick.name=Muretto di Mattoni d'Osso scolorito
-tile.railcraft.wall.bloodstained.brick.name=Muretto di Mattoni sporchi di sangue
-tile.railcraft.wall.brick.name=Muretto di Mattoni
-tile.railcraft.wall.concrete.name=Muretto di Cemento
-tile.railcraft.wall.diamond.name=Muretto di Diamanti
-tile.railcraft.wall.frost.bound.brick.name=Muretto di Mattoni legati al gelo
-tile.railcraft.wall.gold.name=Muretto d'Oro
-tile.railcraft.wall.ice.name=Muretto di Ghiaccio
-tile.railcraft.wall.infernal.name=Muretto di Mattone Infernale
-tile.railcraft.wall.iron.name=Muretto di Ferro
-tile.railcraft.wall.nether.brick.name=Muretto di Mattoni del Nether
-tile.railcraft.wall.obsidian.name=Muretto di Ossidiana
-tile.railcraft.wall.quarried.brick.name=Muretto di Mattoni scavati
-tile.railcraft.wall.quartz.name=Muretto di Quarzo
-tile.railcraft.wall.quartz.chiseled.name=Muretto di Quarzo cesellato
-tile.railcraft.wall.sandstone.chiseled.name=Muretto di Arenaria Cesellata
-tile.railcraft.wall.sandstone.smooth.name=Muretto di Arenaria Levigata
-tile.railcraft.wall.sandstone.name=Muretto di Arenaria
-tile.railcraft.wall.sandy.name=Muretto di Mattone Sabbioso
-tile.railcraft.wall.snow.name=Muretto di Neve
-tile.railcraft.wall.stone.brick.chiseled.name=Muretto di Mattoni di Pietra Cesellati
-tile.railcraft.wall.stone.brick.cracked.name=Muretto di Mattoni di Pietra Crepati
-tile.railcraft.wall.stone.brick.mossy.name=Muretto di Mattoni di Pietra Muschiosi
-tile.railcraft.wall.stone.brick.name=Muretto di Mattoni di Pietra
+railcraft.gui.tip.button.lock.locked=Questo apparato è bloccato da {owner}.\nPuò venire manovrato solo dal proprietario
+railcraft.gui.tip.button.lock.notowner=Non sei il proprietario di questo apparato.\nAppartiene a {owner}.
+railcraft.gui.tip.button.lock.unlocked=Premi per bloccare l'apparato.\n Una volta bloccato potrà\nvenire manovrato solo da te
+
+railcraft.gui.track.embarking.radius=Raggio
+railcraft.gui.track.mode.change=§7*Questa è la modalità @s§r§7, almeno credo...*
+railcraft.gui.track.coupler.mode.auto.coupler=§f§oaggancio automatico
+railcraft.gui.track.coupler.mode.coupler=§f§oaggancio
+railcraft.gui.track.coupler.mode.decoupler=§f§osgancio
+railcraft.gui.track.locking.mode.boarding.train=§f§oimbarco treni
+railcraft.gui.track.locking.mode.boarding=§f§oimbarco vagoni
+railcraft.gui.track.locking.mode.holding.train=§f§ostazionamento treni
+railcraft.gui.track.locking.mode.holding=§f§ostazionamento
+railcraft.gui.track.locking.mode.lockdown.train=§f§oarresto treni
+railcraft.gui.track.locking.mode.lockdown=§f§oarresto
+railcraft.gui.track.priming.fuse=Spoletta = @dtick
+railcraft.gui.track.launcher.force=Forza = @d
+
+railcraft.gui.trade.station.dice.tip=Offerta casuale
+
+railcraft.gui.tuner.abandon.chunk=§7*Nessun segnale, si sarà scaricato il settore*
+railcraft.gui.tuner.abandon.gone=§7*Come "L'apparato non esiste più"?!?*
+railcraft.gui.tuner.abandon.player=§7*Meglio di no, annulliamo*
+railcraft.gui.tuner.start=§7*Sintonizziamo questo %s§7 §7con §7un §7ricevitore*
+railcraft.gui.tuner.stop=§7*Anzi no, lasciamo perdere va*
+railcraft.gui.tuner.success=§7*Bene, anche quel %1$s §7è §7stato §7accoppiato §7con §7questo %2$s§7*
+
+railcraft.gui.turbine.output=Regime: @d%%
+railcraft.gui.turbine.rotor=Rotore
+railcraft.gui.turbine=Turbina elettrogena
+
+railcraft.gui.update.message=§7*Ahah, non ci credo, è uscito il catalogo @s della Railcraft inc.*
+
+#Non chiedermi dove vanno, non li ho mai visti nei comandi
+railcraft.keybind.aura.anchor=Anchor Aura
+railcraft.keybind.aura.surveying=Surveying Aura
+railcraft.keybind.aura.tuning=Tuning Aura
+
+railcraft.keybind.loco.faster=Locomotiva: aumenta velocità
+railcraft.keybind.loco.mode=Locomotiva: Marcia/Arresta
+railcraft.keybind.loco.slower=Locomotiva: riduci velocità
+railcraft.keybind.loco.whistle=Locomotiva: fischio
+
+railcraft.locomotive.model.electric.default.name=E.222
+railcraft.locomotive.model.fuelelectric.default.name=D.340
+railcraft.locomotive.model.steam.magic.default.name=250
+railcraft.locomotive.model.steam.solid.default.name=250
+
+#Mai visti questi
+railcraft.multiblock.state.invalid.entity=Collisione con entità: %s
+railcraft.multiblock.state.invalid.pattern=Pattern non rispettato: %s
+railcraft.multiblock.state.unknown.unloaded=Parte della struttura non caricata: %s
+railcraft.multiblock.state.valid=Struttura valida
+
+#Roba che non ci serve
+tc.research_category.RAILCRAFT=Traheremagy
+thaumcraft.research.RC_Crowbar.name=Thaumium Crowbar
+thaumcraft.research.RC_Crowbar.page.1=By substituting Thaumium for Steel and imbuing it with a touch of Order, you have discovered how to create a Crowbar that is far more receptive to magic.
+thaumcraft.research.RC_Crowbar.text=[RC] I think you dropped this...
+thaumcraft.research.RC_Crowbar_Void.name=Void metal Crowbar
+thaumcraft.research.RC_Crowbar_Void.page.1=Taking things one step further, you have applied your master of arcane materials to create the ultimate Crowbar.
+thaumcraft.research.RC_Crowbar_Void.text=[RC] Gordon would be proud...
+
+tile.activatorRail.name=Binario attivatore
+tile.detectorRail.name=Binario rilevatore
+tile.goldenRail.name=Binario alimentato
+tile.rail.name=Binario convenzionale
+tile.railcraft.default.name=Binario speciale
+
+tile.railcraft.anvil.intact.name=Incudine di acciaio
+tile.railcraft.anvil.slightlyDamaged.name=Incudine di acciaio leggermente danneggiata
+tile.railcraft.anvil.veryDamaged.name=Incudine di acciaio molto danneggiata
+
+#Blocchettiiii
+tile.railcraft.brick.abyssal.block.name=Pietra abissale
+tile.railcraft.brick.abyssal.brick.name=Mattoni abissali
+tile.railcraft.brick.abyssal.cobble.name=Pietrisco abissale
+tile.railcraft.brick.abyssal.etched.name=Pietra abissale intagliata
+tile.railcraft.brick.abyssal.fitted.name=Concio abissale
+tile.railcraft.brick.abyssal.ornate.name=Pietra abissale ornata
+
+tile.railcraft.brick.bleachedbone.block.name=Argilla sbiancata
+tile.railcraft.brick.bleachedbone.brick.name=Mattoni sbiancati
+tile.railcraft.brick.bleachedbone.cobble.name=Pietrisco di argilla sbiancata
+tile.railcraft.brick.bleachedbone.etched.name=Argilla sbiancata intagliata
+tile.railcraft.brick.bleachedbone.fitted.name=Concio sbiancato
+tile.railcraft.brick.bleachedbone.ornate.name=Argilla sbiancata ornata
+
+tile.railcraft.brick.bloodstained.block.name=Arenaria impregnata di sangue
+tile.railcraft.brick.bloodstained.brick.name=Mattoni impregnati di sangue
+tile.railcraft.brick.bloodstained.cobble.name=Pietrisco di arenaria impregnata di sangue
+tile.railcraft.brick.bloodstained.etched.name=Arenaria intagliata impregnata di sangue
+tile.railcraft.brick.bloodstained.fitted.name=Concio impregnato di sangue
+tile.railcraft.brick.bloodstained.ornate.name=Arenaria ornata impregnata di sangue
+
+#Che blocco del cavolo!
+tile.railcraft.brick.frostbound.block.name=Ghiaccio tinto
+tile.railcraft.brick.frostbound.brick.name=Mattoni di ghiaccio tinto
+tile.railcraft.brick.frostbound.cobble.name=Pietrisco di ghiaccio tinto
+tile.railcraft.brick.frostbound.etched.name=Ghiaccio tinto intagliato
+tile.railcraft.brick.frostbound.fitted.name=Concio di ghiaccio tinto
+tile.railcraft.brick.frostbound.ornate.name=Ghiaccio tinto ornato
+
+tile.railcraft.brick.infernal.block.name=Pietra infernale
+tile.railcraft.brick.infernal.brick.name=Mattoni infernali
+tile.railcraft.brick.infernal.cobble.name=Pietrisco infernale
+tile.railcraft.brick.infernal.etched.name=Pietra infernale intagliata
+tile.railcraft.brick.infernal.fitted.name=Concio infernale
+tile.railcraft.brick.infernal.ornate.name=Pietra infernale ornata
+
+tile.railcraft.brick.nether.block.name=Pietra del Nether
+tile.railcraft.brick.nether.cobble.name=Pietrisco del Nether
+tile.railcraft.brick.nether.etched.name=Pietra del nether intagliata
+tile.railcraft.brick.nether.fitted.name=Concio del nether
+tile.railcraft.brick.nether.ornate.name=Pietra del Nether ornata
+
+tile.railcraft.brick.quarried.block.name=Blocco di pietra di cava
+tile.railcraft.brick.quarried.brick.name=Mattone di pietra di cava
+tile.railcraft.brick.quarried.cobble.name=Pietrisco di cava
+tile.railcraft.brick.quarried.etched.name=Pietra di cava intagliata
+tile.railcraft.brick.quarried.fitted.name=Concio di pietra di cava
+tile.railcraft.brick.quarried.ornate.name=Pietra di cava ornata
+
+tile.railcraft.brick.sandy.block.name=Pietra sabbiosa
+tile.railcraft.brick.sandy.brick.name=Mattoni sabbiosi
+tile.railcraft.brick.sandy.cobble.name=Pietrisco sabbioso
+tile.railcraft.brick.sandy.etched.name=Pietra sabbiosa intagliata
+tile.railcraft.brick.sandy.fitted.name=Concio sabbioso
+tile.railcraft.brick.sandy.ornate.name=Pietra sabbiosa ornata
+
+#Cubi
+tile.railcraft.cube.coke.name=Blocco di coke ferroviario
+tile.railcraft.cube.coke.tip=32,000 unità di combustione
+tile.railcraft.cube.concrete.name=Blocco di calcestruzzo armato
+tile.railcraft.cube.copper.name=Blocco di rame
+tile.railcraft.cube.creosote.name=Legno impregnato
+tile.railcraft.cube.crushed.obsidian.name=Ossidiana frantumata
+tile.railcraft.cube.crushed.obsidian.tip=Impedisce la generazione dei mostri
+tile.railcraft.cube.lead.name=Bloco di piombo
+tile.railcraft.cube.steel.name=Blocco di acciaio ferroviario
+tile.railcraft.cube.stone.abyssal.name=Pietra abissale
+tile.railcraft.cube.stone.quarried.name=Pietra di cava
+tile.railcraft.cube.tin.name=Blocco di stagno
+
+tile.railcraft.detector.advanced.name=Rivelatore - Avanzato
+tile.railcraft.detector.age.name=Rivelatore - Età
+tile.railcraft.detector.animal.name=Rivelatore - Animali
+tile.railcraft.detector.any.name=Rivelatore - Qualsiasi
+tile.railcraft.detector.cart.name=Rivelatore - Vagone
+tile.railcraft.detector.empty.name=Rivelatore - Vuoto
+tile.railcraft.detector.energy.name=Rivelatore - Energia
+tile.railcraft.detector.explosive.name=Rivelatore - Esplosivi
+tile.railcraft.detector.item.name=Rivelatore - Oggetti
+tile.railcraft.detector.locomotive.name=Rivelatore - Locomotiva
+tile.railcraft.detector.mob.name=Rivelatore - Mostri
+tile.railcraft.detector.player.name=Rivelatore - Persone
+tile.railcraft.detector.powered.name=Rivelatore - Alimentato
+tile.railcraft.detector.routing.name=Rivelatore - Instradamento
+tile.railcraft.detector.sheep.name=Rivelatore - Pecore
+tile.railcraft.detector.tank.name=Rivelatore - Cisterna
+tile.railcraft.detector.train.name=Rivelatore - Treno
+#Da modificareeee
+tile.railcraft.detector.villager.name=Rivelatore - Villager
+
+tile.railcraft.firestone.recharge.name=Recharging Firestone
+
+tile.railcraft.fluid.creosote.name=Creosoto
+tile.railcraft.fluid.steam.name=Vapore
+
+#Meh, forma!!
+tile.railcraft.frame.name=Telaio per cavi di alimentazione 
+tile.railcraft.frame.tip=Necessari per collegare l'alimentazione alla terza rotaia
+
+tile.railcraft.glass.name=Vetro rinforzato
+
+tile.railcraft.machine.alpha.anchor.admin.name=Ancora dimensionale diagnostica
+tile.railcraft.machine.alpha.anchor.passive.name=Ancora dimensionale passiva
+tile.railcraft.machine.alpha.anchor.personal.name=Ancora dimensionale personale
+tile.railcraft.machine.alpha.anchor.world.name=Ancora dimensionale
+tile.railcraft.machine.alpha.blast.furnace.name=Mattoni per altoforno ferroviario
+tile.railcraft.machine.alpha.blast.furnace.tip=Struttra: 3x4x3, cava
+tile.railcraft.machine.alpha.coke.oven.name=Mattoni di cokeria per locomozione
+tile.railcraft.machine.alpha.coke.oven.tip=Struttura: 3x3x3, cava
+tile.railcraft.machine.alpha.feed.station.name=Mangiatoia
+tile.railcraft.machine.alpha.rock.crusher.name=Frantumatrice di rocce
+tile.railcraft.machine.alpha.rock.crusher.tip=Struttura: 3x2x2
+tile.railcraft.machine.alpha.rolling.machine.name=Macchinario di laminazione
+tile.railcraft.machine.alpha.smoker.name=Ciminiera
+tile.railcraft.machine.alpha.steam.oven.name=Forno a vapore
+tile.railcraft.machine.alpha.steam.oven.tip=Struttura: 2x2x2
+tile.railcraft.machine.alpha.steam.trap.auto.name=Trappola a vapore automatica
+tile.railcraft.machine.alpha.steam.trap.name=Trappola a vapore manuale
+tile.railcraft.machine.alpha.tank.water.name=Torre dell'acqua
+tile.railcraft.machine.alpha.tank.water.tip=Struttura: 3x3x3, cava
+tile.railcraft.machine.alpha.trade.station.name=Stazione di baratto
+tile.railcraft.machine.alpha.turbine.name=Alloggiamento per turbina elettrogena
+tile.railcraft.machine.alpha.turbine.tip=Struttura: 3x2x2\n Produce corrente elettrica dal vapore\n Restituisce acqua del lato inferiore \n Richiede un rotore per funzionare
+
+tile.railcraft.machine.beta.anchor.sentinel.name=Sentinella dimensionale
+tile.railcraft.machine.beta.boiler.firebox.liquid.name=Focolare a combustibile liquido
+tile.railcraft.machine.beta.boiler.firebox.liquid.tip=Struttura: dimensione variabile\n Quadrato: 1x1, 2x2, 3x3
+tile.railcraft.machine.beta.boiler.firebox.solid.name=Focolare a combustibile solido
+tile.railcraft.machine.beta.boiler.firebox.solid.tip=Struttura: dimensione variabile\n Quadrato: 1x1, 2x2, 3x3
+tile.railcraft.machine.beta.boiler.tank.pressure.high.name=Caldaia ad alta pressione
+tile.railcraft.machine.beta.boiler.tank.pressure.high.tip=Struttura: dimensione variabile\n posizionare sopra un focolare.\n Dimensioni: 1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3\n Produce 20mB di vapore per tick
+tile.railcraft.machine.beta.boiler.tank.pressure.high.name=Caldaia a bassa pressione
+tile.railcraft.machine.beta.boiler.tank.pressure.high.tip=Struttura: dimensione variabile\n posizionare sopra un focolare.\n Dimensioni: 1x1x1, 2x2x2, 2x3x2,\n 3x2x3, 3x3x3, 3x4x3\n Produce 10mB di vapore per tick
+tile.railcraft.machine.beta.chest.metals.name=Baule per metalli
+tile.railcraft.machine.beta.chest.metals.tip=Comprime i metalli in blocchi
+tile.railcraft.machine.beta.chest.void.name=Baule del vuoto
+tile.railcraft.machine.beta.chest.void.tip=Spedisce il contenuto in un'altra dimensione (forse?)
+tile.railcraft.machine.beta.engine.steam.hobby.name=Generatore a vapore amatoriale
+tile.railcraft.machine.beta.engine.steam.hobby.tip=Produce 20RF/t\n Richiede 10mB/t di vapore
+tile.railcraft.machine.beta.engine.steam.low.name=Generatore a vapore commerciale
+tile.railcraft.machine.beta.engine.steam.low.tip=Produce 40RF/t\n Richiede 20mB/t di vapore
+tile.railcraft.machine.beta.engine.steam.high.name=Generatore a vapore industriale
+tile.railcraft.machine.beta.engine.steam.high.tip=Produce 80RF/t\n Richiede 40mB/t di vapore
+tile.railcraft.machine.beta.tank.iron.gauge.name=Serbatoio di ferro (indicatore)
+tile.railcraft.machine.beta.tank.iron.gauge.tip=Struttura: Dimensione variabile, cava\n Altezza: da 3 a 11 blocchi\n Diametro: dispari, da 3 a 13 blocchi
+tile.railcraft.machine.beta.tank.iron.valve.name=Serbatoio di ferro (valvola)
+tile.railcraft.machine.beta.tank.iron.valve.tip=Da installarsi sul fondo se\n impiegata come scarico
+tile.railcraft.machine.beta.tank.iron.wall.name=Serbatoio di ferro (parete)
+tile.railcraft.machine.beta.tank.iron.wall.tip=Dimensione variabile, cava\n Altezza: da 3 a 11 blocchi\n Diametro: dispari, da 3 a 13 blocchi
+tile.railcraft.machine.beta.tank.steel.gauge.name=Serbatoio di acciaio (indicatore)
+tile.railcraft.machine.beta.tank.steel.gauge.tip=Struttura: Dimensione variabile, cava\n Altezza: da 3 a 11 blocchi\n Diametro: dispari, da 3 a 13 blocchi
+tile.railcraft.machine.beta.tank.steel.valve.name=Serbatoio di acciaio (valvola)
+tile.railcraft.machine.beta.tank.steel.valve.tip=Da installarsi sul fondo se\n impiegata come scarico
+tile.railcraft.machine.beta.tank.steel.wall.name=Serbatoio di acciaio (parete)
+tile.railcraft.machine.beta.tank.steel.wall.tip=Dimensione variabile, cava\n Altezza: da 3 a 11 blocchi\n Diametro: dispari, da 3 a 13 blocchi
+
+tile.railcraft.machine.delta.wire.name=Cavo di alimentazione ferroviaria
+tile.railcraft.machine.delta.wire.tip=Permette la giunzione elettrica/n di tratte di binari elettrificati\n Necessita di apposito telaio
+
+tile.railcraft.machine.epsilon.admin.steam.producer.name=Caldaia di diagnostica
+tile.railcraft.machine.epsilon.admin.steam.producer.tip=Produce vapore illimitatamente
+tile.railcraft.machine.epsilon.electric.feeder.admin.name=Alimentatore ferroviario diagnostico
+tile.railcraft.machine.epsilon.electric.feeder.admin.tip=Produce corrente illimitatamente
+tile.railcraft.machine.epsilon.electric.feeder.name=Alimentatore per terza rotaia
+tile.railcraft.machine.epsilon.electric.feeder.tip=Fornisce tensione EU ai binari elettrificati
+tile.railcraft.machine.epsilon.engraving.bench.name=Banco per incisioni
+tile.railcraft.machine.epsilon.flux.transformer.name=Trasformatore ferroviario
+tile.railcraft.machine.epsilon.flux.transformer.tip=Struttura: 2x2x2\n Converte corrente RF\n Efficienza: 80%
+tile.railcraft.machine.epsilon.force.track.emitter.name=Emettitore di rotaie a campo di forza
+
+tile.railcraft.machine.gamma.dispenser.cart.name=Distributore di rotabili
+tile.railcraft.machine.gamma.dispenser.cart.tip=§o§9Cambia orientamento con un piede di porco\n§o§cAzionato da un segnale di pietrarossa
+tile.railcraft.machine.gamma.dispenser.train.name=Distributore di convogli
+tile.railcraft.machine.gamma.dispenser.train.tip=§o§9Cambia orientamento con un piede di porco\n§o§cAzionato da un segnale di pietrarossa
+tile.railcraft.machine.gamma.loader.energy.name=Stazione di ricarica EU
+tile.railcraft.machine.gamma.loader.energy.tip=§o§9Cambia orientamento con un piede di porco\n§o§cAccetta soltanto corrente EU!
+tile.railcraft.machine.gamma.loader.rf.name=Stazione di ricarica RF
+tile.railcraft.machine.gamma.loader.rf.tip=§o§9Cambia orientamento con un piede di porco\n§o§cAccetta soltanto corrente RF!
+tile.railcraft.machine.gamma.loader.item.advanced.name=Stazione avanzata di carico
+tile.railcraft.machine.gamma.loader.item.advanced.tip=§o§9Cambia orientamento con un piede di porco
+tile.railcraft.machine.gamma.loader.item.name=Stazione di carico
+tile.railcraft.machine.gamma.loader.item.tip=§o§cDa collocare sopra ai binari
+tile.railcraft.machine.gamma.loader.liquid.name=Stazione di carico liquidi
+tile.railcraft.machine.gamma.loader.liquid.tip=§o§cDa collocare sopra ai binari
+tile.railcraft.machine.gamma.unloader.energy.name=Stazione di scarica EU
+tile.railcraft.machine.gamma.unloader.energy.tip=§o§9Cambia orientamento con un piede di porco\n§o§cEmette corrente EU
+tile.railcraft.machine.gamma.unloader.rf.name=Stazione di scarica RF
+tile.railcraft.machine.gamma.unloader.rf.tip=§o§9Cambia orientamento con un piede di porco\n§o§cEmette corrente RF
+tile.railcraft.machine.gamma.unloader.item.advanced.name=Stazione avanzata di scarico
+tile.railcraft.machine.gamma.unloader.item.advanced.tip=§o§9Cambia orientamento con un piede di porco
+tile.railcraft.machine.gamma.unloader.item.name=Stazione di scarico
+tile.railcraft.machine.gamma.unloader.item.tip=§o§cDa collocare sotto ai binari
+tile.railcraft.machine.gamma.unloader.liquid.name=Stazione di scarico liquidi
+tile.railcraft.machine.gamma.unloader.liquid.tip=§o§cDa collocare sotto ai binari
+
+tile.railcraft.ore.dark.diamond.name=Minerale di diamante abissale
+tile.railcraft.ore.dark.emerald.name=Minerale di smeraldo abissale
+tile.railcraft.ore.dark.lapis.name=Minerale di lapisalzzuli abissale
+tile.railcraft.ore.firestone.name=Firestone Ore
+tile.railcraft.ore.firestone.tip.name=Burning everything except flesh,\n you can feel the air change\n around you as you hold it...
+tile.railcraft.ore.poor.copper.name=Rame grezzo scarso
+tile.railcraft.ore.poor.gold.name=Oro grezzo scarso
+tile.railcraft.ore.poor.iron.name=Ferro grezzo scarso
+tile.railcraft.ore.poor.lead.name=Piombo grezzo scarso
+tile.railcraft.ore.poor.tin.name=Stagno grezzo scarso
+tile.railcraft.ore.saltpeter.name=Minerale di salnitro
+tile.railcraft.ore.sulfur.name=Minerale di zolfo
+
+tile.railcraft.post.emblem.name=Palo metallico con segnale
+tile.railcraft.post.metal.black.name=Palo metallico nero
+tile.railcraft.post.metal.blue.name=Palo metallico blu
+tile.railcraft.post.metal.brown.name=Palo metallico marrone
+tile.railcraft.post.metal.cyan.name=Palo metallico ciano
+tile.railcraft.post.metal.gray.name=Palo metallico grigio
+tile.railcraft.post.metal.green.name=Palo metallico verde
+tile.railcraft.post.metal.light.blue.name=Palo metallico azzurro
+tile.railcraft.post.metal.light.gray.name=Palo metallico grigio chiaro
+tile.railcraft.post.metal.lime.name=Palo metallico color lime
+tile.railcraft.post.metal.magenta.name=Palo metallico magenta
+tile.railcraft.post.metal.unpainted.name=Palo metallico
+tile.railcraft.post.metal.orange.name=Palo metallico arancione
+tile.railcraft.post.metal.pink.name=Palo metallico rosa
+tile.railcraft.post.metal.purple.name=Palo metallico viola
+tile.railcraft.post.metal.red.name=Palo metallico rosso
+tile.railcraft.post.metal.white.name=Palo metallico bianco
+tile.railcraft.post.metal.yellow.name=Palo metallico giallo
+tile.railcraft.post.stone.name=Palo di pietra
+tile.railcraft.post.stone.platform.name=Piattaforma di pietra
+tile.railcraft.post.wood.name=Palo di legno
+tile.railcraft.post.wood.platform.name=Piattaforma di legno
+tile.railcraft.post.metal.platform.black.name=Piattaforma metallica nera
+tile.railcraft.post.metal.platform.blue.name=Piattaforma metallica blu
+tile.railcraft.post.metal.platform.brown.name=Piattaforma metallica marrone
+tile.railcraft.post.metal.platform.cyan.name=Piattaforma metallica ciano
+tile.railcraft.post.metal.platform.gray.name=Piattaforma metallica grigia
+tile.railcraft.post.metal.platform.green.name=Piattaforma metallica verde
+tile.railcraft.post.metal.platform.light.blue.name=Piattaforma metallica azzurra
+tile.railcraft.post.metal.platform.light.gray.name=Piattaforma metallica grigio chiaro
+tile.railcraft.post.metal.platform.lime.name=Piattaforma metallica color lime
+tile.railcraft.post.metal.platform.magenta.name=Piattaforma metallica magenta
+tile.railcraft.post.metal.platform.unpainted.name=Piattaforma metallica
+tile.railcraft.post.metal.platform.orange.name=Piattaforma metallica arancione
+tile.railcraft.post.metal.platform.pink.name=Piattaforma metallica rosa
+tile.railcraft.post.metal.platform.purple.name=Piattaforma metallica viola
+tile.railcraft.post.metal.platform.red.name=Piattaforma metallica rossa
+tile.railcraft.post.metal.platform.white.name=Piattaforma metallica bianca
+tile.railcraft.post.metal.platform.yellow.name=Piattaforma metallica gialla
+
+tile.railcraft.residual.heat.name=Calore residuo
+
+tile.railcraft.signal.block.signal.dual.name=Segnale di blocco a doppia testa
+tile.railcraft.signal.block.signal.dual.tip=Rileva la presenza in una sezione\nRiporta l'aspetto di un regolatore\n§o§9Collegamento aereo:\n§o§91 segnale di blocco\n§o§91 regolatore\n§o§91 ricevitore\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali\n§o§csezionatore di blocco
+tile.railcraft.signal.block.signal.name=Segnale di blocco
+tile.railcraft.signal.block.signal.tip=Rileva la presenza in una sezione\n§o§9Collegamento aereo:\n§o§91 segnale di blocco\n§o§91 regolatore\n§o§cStrumenti utili:\n§o§csezionatore di blocco
+tile.railcraft.signal.box.analog.name=Regolatore di segnalamento analogico
+tile.railcraft.signal.box.analog.tip=Invia segnali ai ricevitori\n§o§9Collegamento aereo: 1 attuatore\n§o§9Collegamento di prossimità: nessuno\n§o§9Collegamento di pietrarossa: ricezione\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.box.block.relay.name=Ripetitore di blocco
+tile.railcraft.signal.box.block.relay.tip=Realizza sezioni di blocco concatenate\n§o§9Collegamento aereo: 2 segnali di blocco\n§o§9Collegamento di prossimità: emissione\n§o§9Collegamento di pietrarossa: emissione\n§o§cStrumenti utili:\n§o§csezionatore di blocco
+tile.railcraft.signal.box.capacitor.name=Condensatore di segnalamento
+tile.railcraft.signal.box.capacitor.tip=Invia segnali ai ricevitori\n§o§Collegamento aereo: nessuno\n§o§9Collegamento di prossimità: ricezione ed emissione\n§o§9Collegamento di pietrarossa: ricezione da ripetitori, emissione
+tile.railcraft.signal.box.controller.name=Regolatore di sengalamento
+tile.railcraft.signal.box.controller.tip=Invia segnali ai ricevitori\n§o§9Collegamento aereo: 1 regolatore\n§o§9Collegamento di prossimità: ricezione\n§o§9Collegamento di pietrarossa: ricezione\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.box.interlock.name=Apparato centrale di segnalamento
+tile.railcraft.signal.box.interlock.tip=Permette il passaggo di un solo aspetto\n§o§9Collegamento aereo:\n§o§91 regolatore\n§o§91 ricevitore\n§o§9Collegamento di prossimità:\n§o§9apparati centrali,\n§o§9ricezione ed emissione più restrittiva\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.box.receiver.name=Ricevitore di segnalamento
+tile.railcraft.signal.box.receiver.tip=Riceve il segnale dai regloatori\n§o§9Collegamento aereo: 1 ricevitore\n§o§9Collegamento di prossimità: emissione\n§o§9Collegamento di pietrarossa: emissione\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.box.sequencer.name=Sequenziatore di segnalamento
+tile.railcraft.signal.box.sequencer.tip=Loops through adjacent blocks\n§o§9Collegamento di prossimità:\n§o§9sequenziatore\n§o§9ricezione (clock)\n§o§9emissione\n§o§9Collegamento di pietrarossa:\n§o§9ricezione da ripetitori (clock)\n§o§9emissione
+tile.railcraft.signal.distant.dual.name=Segnale di avviso a doppia testa
+tile.railcraft.signal.distant.dual.tip=Riporta l'aspetto di due regolatori\n§o§9Collegamento aereo: 2 ricevitori\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.distant.name=Segnale di avviso
+tile.railcraft.signal.distant.tip=Riporta l'aspetto di un regolatore\n§o§9Collegamento aereo: 1 ricevitore\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.switch.lever.name=Manovratore manuale
+tile.railcraft.signal.switch.lever.tip=Regola la posizione di un deviatoio adiacente\n§o§9Operato manualmente
+tile.railcraft.signal.switch.motor.name=Manovratore motorizzato
+tile.railcraft.signal.switch.motor.tip=Regola la posizione di un deviatoio adiacente\n§o§9Collegamento aereo: 1 ricevitore\n§o§9Collegamento di pietrarossa: ricezione\n§o§cStrumenti utili:\n§o§csintonizzatore di segnali
+tile.railcraft.signal.switch.routing.name=Manovratore automatizzato
+tile.railcraft.signal.switch.routing.tip=Regola la posizione di un deviatoio adiacente\n§o§9Operato tramite logica programmata\n§o§cStrumenti utili:\n§o§cTabella di instratamento
+
+#Lastre
+tile.railcraft.slab.abyssal.block.name=Lastra di pietra abissale
+tile.railcraft.slab.abyssal.brick.name=Lastra di mattoni abissali
+tile.railcraft.slab.abyssal.cobble.name=Lastra di pietrisco abissale
+tile.railcraft.slab.abyssal.fitted.name=Lastra di concio abissale
+tile.railcraft.slab.bleachedbone.block.name=Lastra di argilla sbiancata
+tile.railcraft.slab.bleachedbone.brick.name=Lastra di mattoni sbiancati
+tile.railcraft.slab.bleachedbone.cobble.name=Lastra di pietrisco di argilla sbiancata
+tile.railcraft.slab.bleachedbone.fitted.name=Lastra di concio sbiancato
+tile.railcraft.slab.bloodstained.block.name=Lastra di arenaria impregnata di sangue
+tile.railcraft.slab.bloodstained.brick.name=Lastra di mattoni impregnati di sangue
+tile.railcraft.slab.bloodstained.cobble.name=Lastra di pietrisco di arenaria impregnata di sangue
+tile.railcraft.slab.bloodstained.fitted.name=Lastra di concio impregnato di sangue
+tile.railcraft.slab.concrete.name=Lastra di calcestruzzo armato
+tile.railcraft.slab.copper.name=Lastra di rame
+tile.railcraft.slab.creosote.name=Lastra di legno impregnato
+tile.railcraft.slab.diamond.name=Lastra di diamante
+tile.railcraft.slab.frostbound.block.name=Lastra di ghiaccio tinto
+tile.railcraft.slab.frostbound.brick.name=Lastra di mattoni di ghiaccio tinto
+tile.railcraft.slab.frostbound.cobble.name=Lastra di pietrisco di ghiaccio tinto
+tile.railcraft.slab.frostbound.fitted.name=Lastra di concio di ghiaccio tinto
+tile.railcraft.slab.gold.name=Lastra d'oro
+tile.railcraft.slab.ice.name=Lastra di ghiaccio
+tile.railcraft.slab.infernal.block.name=Lastra di pietra infernale
+tile.railcraft.slab.infernal.brick.name=Lastra di mattoni infernali
+tile.railcraft.slab.infernal.cobble.name=Lastra di pietrisco infernale
+tile.railcraft.slab.infernal.fitted.name=Lastra di concio infernale
+tile.railcraft.slab.iron.name=Lastra di ferro
+tile.railcraft.slab.lead.name=Lastra di piombo
+tile.railcraft.slab.nether.block.name=Lastra di pietra del Nether
+tile.railcraft.slab.nether.cobble.name=Lastra di pietrisco del Nether
+tile.railcraft.slab.nether.fitted.name=Concio del Nether
+tile.railcraft.slab.obsidian.name=Lastra di ossidiana
+tile.railcraft.slab.packed.ice.name=Lastra di ghiaccio compatto
+tile.railcraft.slab.quarried.block.name=Lastra di pietra di cava
+tile.railcraft.slab.quarried.brick.name=Lastra di mattoni di pietra di cava
+tile.railcraft.slab.quarried.cobble.name=Lastra di pietrisco di cava
+tile.railcraft.slab.quarried.fitted.name=Concio di pietra di cava
+tile.railcraft.slab.sandy.block.name=Lastra di pietra sabbiosa
+tile.railcraft.slab.sandy.brick.name=Lastra di mattoni sabbiosi
+tile.railcraft.slab.sandy.cobble.name=Lastra di pietrisco sabbioso
+tile.railcraft.slab.sandy.fitted.name=Concio di sabbioso
+tile.railcraft.slab.snow.name=Lastra di neve
+tile.railcraft.slab.steel.name=Lastra di acciaio ferroviario
+tile.railcraft.slab.tin.name=Lastra di stagno
+
+#Scalette
+tile.railcraft.stair.abyssal.block.name=Scalini di pietra abissale
+tile.railcraft.stair.abyssal.brick.name=Scalini di mattoni abissali
+tile.railcraft.stair.abyssal.cobble.name=Scalini di pietrisco abissale
+tile.railcraft.stair.abyssal.fitted.name=Scalini di concio abissale
+tile.railcraft.stair.bleachedbone.block.name=Scalini di argilla sbiancata
+tile.railcraft.stair.bleachedbone.brick.name=Scalini di mattoni sbiancati
+tile.railcraft.stair.bleachedbone.cobble.name=Scalini di pietrisco di argilla sbiancata
+tile.railcraft.stair.bleachedbone.fitted.name=Scalini di concio sbiancato
+tile.railcraft.stair.bloodstained.block.name=Scalini di arenaria impregnata di sangue
+tile.railcraft.stair.bloodstained.brick.name=Scalini di mattoni impregnati di sangue
+tile.railcraft.stair.bloodstained.cobble.name=Scalini di pietrisco di arenaria impregnata di sangue
+tile.railcraft.stair.bloodstained.fitted.name=Scalini di concio impregnato di sangue
+tile.railcraft.stair.concrete.name=Scalini di calcestruzzo armato
+tile.railcraft.stair.copper.name=Scalini di rame
+tile.railcraft.stair.creosote.name=Scalini di legno impregnato
+tile.railcraft.stair.diamond.name=Scalini di diamante
+tile.railcraft.stair.frostbound.block.name=Scalini di ghiaccio tinto
+tile.railcraft.stair.frostbound.brick.name=Scalini di mattoni di ghiaccio tinto
+tile.railcraft.stair.frostbound.cobble.name=Scalini di pietrisco di ghiaccio tinto
+tile.railcraft.stair.frostbound.fitted.name=Scalini di concio di ghiaccio tinto
+tile.railcraft.stair.gold.name=Scalini d'oro
+tile.railcraft.stair.ice.name=Scalini di ghiaccio
+tile.railcraft.stair.infernal.block.name=Scalini di pietra infernale
+tile.railcraft.stair.infernal.brick.name=Scalini di mattoni infernali
+tile.railcraft.stair.infernal.cobble.name=Scalini di pietrisco infernale
+tile.railcraft.stair.infernal.fitted.name=Scalini di concio infernale
+tile.railcraft.stair.iron.name=Scalini di ferro
+tile.railcraft.stair.lead.name=Scalini di piombo
+tile.railcraft.stair.nether.block.name=Scalini di pietra del Nether
+tile.railcraft.stair.nether.cobble.name=Scalini di pietrisco del Nether
+tile.railcraft.stair.nether.fitted.name=Scalini di concio del Nether
+tile.railcraft.stair.obsidian.name=Scalini di ossidiana
+tile.railcraft.stair.packed.ice.name=Scalini di ghiaccio compatto
+tile.railcraft.stair.quarried.block.name=Scalini di pietra di cava
+tile.railcraft.stair.quarried.brick.name=Scalini di mattoni di pietra di cava
+tile.railcraft.stair.quarried.cobble.name=Scalini di pietrisco di cava
+tile.railcraft.stair.quarried.fitted.name=Scalini di concio di pietra di cava
+tile.railcraft.stair.sandy.block.name=Scalini di pietra sabbiosa
+tile.railcraft.stair.sandy.brick.name=Scalini di mattoni sabbiosi
+tile.railcraft.stair.sandy.cobble.name=Scalini di pietrisco sabbioso
+tile.railcraft.stair.sandy.fitted.name=Scalini di concio sabbioso
+tile.railcraft.stair.snow.name=Scalini di neve
+tile.railcraft.stair.steel.name=Scalini di acciaio ferroviario
+tile.railcraft.stair.tin.name=Scalini di stagno
+
+tile.railcraft.lantern.metal.copper.name=Lanterna di rame
+tile.railcraft.lantern.metal.gold.name=Lanterna d'oro
+tile.railcraft.lantern.metal.iron.name=Lanterna di ferro
+tile.railcraft.lantern.metal.lead.name=Lanterna di piombo
+tile.railcraft.lantern.metal.steel.name=Lanterna di acciaio
+tile.railcraft.lantern.metal.tin.name=Lanterna di stagno
+
+tile.railcraft.lantern.stone.abyssal.name=Lanterna abissale
+tile.railcraft.lantern.stone.bleachedbone.name=Lanterna sbiancata
+tile.railcraft.lantern.stone.bloodstained.name=Lanterna impregnata di sangue
+tile.railcraft.lantern.stone.frostbound.name=Lanterna di ghiaccio
+tile.railcraft.lantern.stone.infernal.name=Lanterna infernale
+tile.railcraft.lantern.stone.nether.name=Lanterna del nether
+tile.railcraft.lantern.stone.quarried.name=Lanterna di pietra di cava
+tile.railcraft.lantern.stone.sandstone.name=Lanterna di arenaria
+tile.railcraft.lantern.stone.sandy.name=Lanterna sabbiosa
+tile.railcraft.lantern.stone.stone.name=Lanterna di pietra
+
+railcraft.gui.mag.glass.placedby=%1$s è stato piazzato da %2$s
+
+tile.railcraft.track.boarding.name=Binario d'imbarco vagoni
+tile.railcraft.track.boarding.tip=Sostituito dal binario di arresto
+tile.railcraft.track.boarding.train.name=Binario d'imbarco convogli
+tile.railcraft.track.boarding.train.tip=Sostituito dal binario di arresto
+tile.railcraft.track.buffer.stop.name=Binario tronco con paraurti
+tile.railcraft.track.buffer.stop.tip=Termine della linea in sicurezza\n§o§9Cambia direzione con un piede di porco
+tile.railcraft.track.control.name=Binario di controllo rotabili
+tile.railcraft.track.control.tip=Apporta una leggera spinta nel senso di marcia\n§o§9Cambia direzione con un piede di porco\n§o§cCambia direzione con un segnale di pietrarossa
+tile.railcraft.track.coupler.name=Binario di accoppiamento
+tile.railcraft.track.coupler.tip=Esegue l'aggancio/sgancio dei convogli\n§o§9Cambia modalità con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.decoupler.name=Binario di disaccoppiamento
+tile.railcraft.track.detector.direction.name=Binario rilevatore unidirezionale
+tile.railcraft.track.detector.direction.tip=Emette un segnale di pietrarossa se\n rileva movimento nella direzione indicata\n§o§9Cambia direzione con un piede di porco
+tile.railcraft.track.disembarking.name=Binario di sbarco
+tile.railcraft.track.disembarking.tip=Fa scendere le entità dai vagoni dal\n lato indicato dalla freccia\n§o§9Cambia direzione con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.disposal.name=Binario di scarico
+tile.railcraft.track.disposal.tip=Tracciato sospeso\nScarica le entità dai vagoni\n§o§cSi attiva disattiva con un segnale di pietrarossa
+tile.railcraft.track.electric.name=Binario elettrificato in terza rotaia
+tile.railcraft.track.electric.tip=§9PERICOLO: ALTA TENSIONE!\n§rFornisce corrente alle locomotive elettriche\nRichiede apposito alimentatore\nImpiegare un cavo di collegamento per tratte discontinue
+tile.railcraft.track.electric.junction.name=Binario di incrocio elettrificato
+tile.railcraft.track.electric.junction.tip=§9PERICOLO: ALTA TENSIONE!\n§rFornisce corrente alle locomotive elettriche\nRichiede apposito alimentatore\nImpiegare un cavo di collegamento per tratte discontinue
+tile.railcraft.track.electric.switch.name=Deviatoio elettrificato
+tile.railcraft.track.electric.switch.tip=§9PERICOLO: ALTA TENSIONE!\n§rFornisce corrente alle locomotive elettriche\nRichiede apposito alimentatore\nImpiegare un cavo di collegamento per tratte discontinue\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.electric.wye.name=Deviatoio simmetrico elettrificato
+tile.railcraft.track.electric.wye.tip=§9PERICOLO: ALTA TENSIONE!\n§rFornisce corrente alle locomotive elettriche\nRichiede apposito alimentatore\nImpiegare un cavo di collegamento per tratte discontinue\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.elevator.name=Binario verticale
+tile.railcraft.track.elevator.tip=Permette il movimento verticale dei rotabili\n§o§cRichiede pietrarossa per la salita
+tile.railcraft.track.embarking.name=Binario di imbarco
+tile.railcraft.track.embarking.tip=Carica le entità nei vagoni\n§o§9Modifica il raggio con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.force.name=Binario a campo di forza
+tile.railcraft.track.gated.name=Binario con cancelletto
+tile.railcraft.track.gated.tip=È un cancello\n§o§cSi apre con un segnale di pietrarossa
+tile.railcraft.track.gated.oneway.name=Binario con cancelletto unidirezionale
+tile.railcraft.track.gated.oneway.tip=È un cancello unidirezionale\n§o§9Cambia direzione con un piede di porco\n§o§cSi apre con un segnale di pietrarossa
+tile.railcraft.track.holding.name=Binario di stazionamento vagoni
+tile.railcraft.track.holding.tip=Sostituito dal binario di arresto
+tile.railcraft.track.holding.train.name=Binario di stazionamento convogli
+tile.railcraft.track.holding.train.tip=Sostituito dal binario di arresto
+tile.railcraft.track.junction.name=Binario di incrocio
+tile.railcraft.track.launcher.name=Binario di lancio
+tile.railcraft.track.launcher.tip=Fa volare via i rotabili\nPerché? Seriamente, perché..?\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.limiter.name=Binario limitatore
+tile.railcraft.track.limiter.tip=Regola la velocità di transito\ndelle locomotive\n§o§9Si regola con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.lockdown.name=Binario di arresto vagoni
+tile.railcraft.track.lockdown.tip=Sostituito dal binario di arresto
+tile.railcraft.track.lockdown.train.name=Binario di arresto convogli
+tile.railcraft.track.lockdown.train.tip=Sostituito dal binario di arresto
+tile.railcraft.track.locking.name=Binario di arresto
+tile.railcraft.track.locking.tip=Ferma e regola la sosta\n§o§9Cambia modalità con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.locomotive.name=Binario di controllo locomotive
+tile.railcraft.track.locomotive.tip=Invia un segnale di\narresto/partenza/stazionamento\n§o§9Cambia modalità con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.oneway.name=Binario unidirezionale
+tile.railcraft.track.oneway.tip=Consente il transito solamente\nnel senso di marcia indicato\n§o§9Cambia direzione con un piede di porco
+tile.railcraft.track.priming.name=Binario di accensione
+tile.railcraft.track.priming.tip=Accende i vagoni con esplosivo\n§o§9Regola la spoletta con un piede di porco\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.reinforced.boost.name=Binario alimentato ad alta densità
+tile.railcraft.track.reinforced.boost.tip=Incremento di velocità del 25%\nrispetto ai binari convenzionali\nResistente alle esplosioni\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.reinforced.junction.name=Binario di incrocio ad alta densità
+tile.railcraft.track.reinforced.junction.tip=Incremento di velocità del 25%\nrispetto ai binari convenzionali\nResistente alle esplosioni
+tile.railcraft.track.reinforced.name=Binario ad alta densità
+tile.railcraft.track.reinforced.tip=Incremento di velocità del 25%\nrispetto ai binari convenzionali\nResistente alle esplosioni
+tile.railcraft.track.reinforced.switch.name=Deviatoio ad alta densità
+tile.railcraft.track.reinforced.switch.tip=Incremento di velocità del 25%\nrispetto ai binari convenzionali\nResistente alle esplosioni\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.reinforced.wye.name=Deviatoio simmetrico ad alta densità
+tile.railcraft.track.reinforced.wye.tip=Incremento di velocità del 25%\nrispetto ai binari convenzionali\nResistente alle esplosioni\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.routing.name=Binario di instradamento
+tile.railcraft.track.routing.tip=Imposta una destinazione alle locomotive\n§o§9Cambia biglietto con un piede di porco
+tile.railcraft.track.slow.boost.name=Binario alimentato per basse velocità
+tile.railcraft.track.slow.boost.tip=Riduzione di velocità del 70%\nrispetto ai binari convenzionali\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.slow.junction.name=Binario di incrocio per basse velocità
+tile.railcraft.track.slow.junction.tip=Riduzione di velocità del 70%\nrispetto ai binari convenzionali
+tile.railcraft.track.slow.name=Binario per basse velocità
+tile.railcraft.track.slow.tip=Riduzione di velocità del 70%\nrispetto ai binari convenzionali
+tile.railcraft.track.slow.switch.name=Deviatoio per basse velocità
+tile.railcraft.track.slow.switch.tip=Riduzione di velocità del 70%\nrispetto ai binari convenzionali\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.slow.wye.name=Deviatoio simmetrico per basse velocità
+tile.railcraft.track.slow.wye.tip=Riduzione di velocità del 70%\nrispetto ai binari convenzionali\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.speed.boost.name=Binario alimentato AV
+tile.railcraft.track.speed.boost.tip=§9PERICOLO!§r Permette velocità elevate\n§ rispetto ai binari convenzionali\n§o§cRichiede un segnale di pietrarossa per accelerare
+tile.railcraft.track.speed.name=Binario per alta velocità
+tile.railcraft.track.speed.tip=§9PERICOLO!§r Permette velocità elevate\n§ rispetto ai binari convenzionali\nRichiede tratte di transizione\nNon è possibile effettuare curve in AV
+tile.railcraft.track.speed.switch.name=Deviatoio AV
+tile.railcraft.track.speed.switch.tip=§9PERICOLO!§r Non è possibile\n deviare convogli in AV\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.speed.transition.name=Binario di transizione AV
+tile.railcraft.track.speed.transition.tip=§9PERICOLO!§r Permette velocità elevate\n§ rispetto ai binari convenzionali\nPermette l'immissione/uscita in tratti in AV\n§o§cRichiede un segnale di pietrarossa per accelerare
+tile.railcraft.track.speed.wye.name=Deviatoio simmetrico AV
+tile.railcraft.track.speed.wye.tip=§9PERICOLO!§r Non è possibile\n deviare convogli in AV\n§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.suspended.name=Binari abbandonati
+tile.railcraft.track.suspended.tip=Non sono molto stabili\nPossono essere sospesi nel vuoto
+tile.railcraft.track.switch.name=Deviatoio
+tile.railcraft.track.switch.tip=§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.whistle.name=Binario di segnalazione
+tile.railcraft.track.whistle.tip=Fa emettere un segnale\nacustico alle locomotive\n§o§cSi attiva con un segnale di pietrarossa
+tile.railcraft.track.wye.name=Deviatoio simmetrico
+tile.railcraft.track.wye.tip=§o§cRichiede un dispositivo di manovra
+tile.railcraft.track.autolococoupler.name=Automatic Locomotive Coupler
+tile.railcraft.track.autolococoupler.tip=Sets Passing Locomotives To\nLink With First Cart They \nCollide With And Then Automatically\nSwitch To Shunting Speed.\n§o§c- Apply Redstone to enable -
+
+tile.railcraft.wall.abyssal.brick.name=Muretto di mattoni abissali
+tile.railcraft.wall.bleachedbone.brick.name=Muretto di mattoni sbiancati
+tile.railcraft.wall.bloodstained.brick.name=Muretto di mattoni impregnati di sangue
+tile.railcraft.wall.brick.name=Muretto di mattoni
+tile.railcraft.wall.concrete.name=Muretto di calcestruzzo armato
+tile.railcraft.wall.diamond.name=Muretto di diamante
+tile.railcraft.wall.frost.bound.brick.name=Muretto di ghiaccio tinto
+tile.railcraft.wall.gold.name=Muretto d'oro
+tile.railcraft.wall.ice.name=Muretto di ghiaccio
+tile.railcraft.wall.infernal.brick.name=Muretto di mattoni infernali
+tile.railcraft.wall.iron.name=Muretto di ferro
+tile.railcraft.wall.nether.brick.name=Muretto di mattoni del Nether
+tile.railcraft.wall.obsidian.name=Muretto di ossidiana
+tile.railcraft.wall.quarried.brick.name=Muretto di mattoni di pietra di cava
+tile.railcraft.wall.quartz.chiseled.name=Muretto di quarzo intagliato
+tile.railcraft.wall.quartz.name=Muretto di quarzo
+tile.railcraft.wall.sandstone.chiseled.name=Muretto di arenaria intagliata
+tile.railcraft.wall.sandstone.name=Muretto di arenaria
+tile.railcraft.wall.sandstone.smooth.name=Muretto di arenaria levigata
+tile.railcraft.wall.sandy.brick.name=Muretto di mattoni sabbiosi
+tile.railcraft.wall.snow.name=Muretto di neve
+tile.railcraft.wall.stone.brick.chiseled.name=Muretto di pietra concia intaliata
+tile.railcraft.wall.stone.brick.cracked.name=Muretto di pietra concia incrinata
+tile.railcraft.wall.stone.brick.mossy.name=Muretto di pietra concia muschiosa
+tile.railcraft.wall.stone.brick.name=Muretto di pietra concia
+
+tile.railcraft.worldlogic.name=Ripopolatore di salnitro
+
+tooltip.wawla.tooltype.crowbar=Piede di porco

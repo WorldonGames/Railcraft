@@ -1,3 +1,11 @@
+x9.12.2.2
+	INFO: Prima versione curata da WorldonGames per GearsLand.
+	INFO: Localizzazioni complete in italiano secondo lo stile di Gears.
+	NEW: Aggiunta la locomotiva termica-elettrica, alimentata a combustibile liquido con trazione elettrica(issue #1)
+	CHANGE: Le locomotive non possono essere spinte dalle entità
+	CONFIG: I serbatoi possono estendersi fino ad una base di 13x13, altezze da 3 a 11. Rivisti i moltiplicatori di capacità.
+	CONFIG: La capacità del vagone cisterna può essere estesa fino a 256B
+	FIX: Ritoccati i colori degli aspetti
 9.12.2.1
 	NEW: Added Trackman's Notepad, a tool for copying settings from one block to another. (contribution by Forecaster)
 	INFO: Notepad currently only supports Item and Fluid Loaders/Unloaders.

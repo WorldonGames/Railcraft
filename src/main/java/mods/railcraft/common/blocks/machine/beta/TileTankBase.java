@@ -56,7 +56,7 @@ import java.util.Map;
  */
 public abstract class TileTankBase extends TileMultiBlock implements ITankTile {
     public final static int CAPACITY_PER_BLOCK_IRON = 16 * FluidHelper.BUCKET_VOLUME;
-    public final static int CAPACITY_PER_BLOCK_STEEL = 32 * FluidHelper.BUCKET_VOLUME;
+    public final static int CAPACITY_PER_BLOCK_STEEL = 20 * FluidHelper.BUCKET_VOLUME;
     protected final static int SLOT_INPUT = 0;
     protected final static int SLOT_OUTPUT = 1;
     protected final static int NETWORK_UPDATE_INTERVAL = 64;
@@ -320,6 +320,164 @@ public abstract class TileTankBase extends TileMultiBlock implements ITankTile {
             for (int i = 4; i <= 8; i++) {
                 char[][][] map = buildMap(i, bottom, middle, top, border);
                 AxisAlignedBB entityCheck = AxisAlignedBB.getBoundingBox(-3, 1, -3, 4, i - 1, 4);
+                pats.add(buildPattern(map, xOffset, yOffset, zOffset, entityCheck));
+            }
+        }
+        
+        // 11x11
+        if (client || RailcraftConfig.getMaxTankSize() >= 11) {
+            xOffset = zOffset = 6;
+
+            bottom = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'M', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            middle = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            top = new char[][]{
+	                {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+	                {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'T', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+	                {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+	        };
+
+            border = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            for (int i = 3; i <= 11; i++) {
+                char[][][] map = buildMap(i, bottom, middle, top, border);
+                AxisAlignedBB entityCheck = AxisAlignedBB.getBoundingBox(-4, 1, -4, 5, i - 1, 5);
+                pats.add(buildPattern(map, xOffset, yOffset, zOffset, entityCheck));
+            }
+        }
+        
+        // 13x13
+        if (client || RailcraftConfig.getMaxTankSize() >= 13) {
+            xOffset = zOffset = 7;
+
+            bottom = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'M', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            middle = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'W', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'W', 'O'},
+                    {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            top = new char[][]{
+	                {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+	                {'O', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'T', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'B', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'W', 'B', 'O'},
+	                {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+	        };
+
+            border = new char[][]{
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                    {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'}
+            };
+
+            for (int i = 3; i <= 11; i++) {
+                char[][][] map = buildMap(i, bottom, middle, top, border);
+                AxisAlignedBB entityCheck = AxisAlignedBB.getBoundingBox(-5, 1, -5, 6, i - 1, 6);
                 pats.add(buildPattern(map, xOffset, yOffset, zOffset, entityCheck));
             }
         }

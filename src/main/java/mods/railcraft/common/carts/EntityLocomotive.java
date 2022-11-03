@@ -88,6 +88,7 @@ public abstract class EntityLocomotive extends CartContainerBase implements IDir
 
     public EntityLocomotive(World world) {
         super(world);
+        this.canBePushed = false;
         setPrimaryColor(EnumColor.LIGHT_GRAY.ordinal());
         setSecondaryColor(EnumColor.GRAY.ordinal());
     }

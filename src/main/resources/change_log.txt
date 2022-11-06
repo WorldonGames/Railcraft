@@ -1,4 +1,6 @@
-x9.12.2.2
+x9.13.0.1
+	FIX: Risolto problema che impediva la posa di locomotive a gasolio nei server
+x9.13.0.0
 	INFO: Prima versione curata da WorldonGames per GearsLand.
 	INFO: Localizzazioni complete in italiano secondo lo stile di Gears.
 	NEW: Aggiunta la locomotiva termica-elettrica, alimentata a combustibile liquido con trazione elettrica(issue #1)

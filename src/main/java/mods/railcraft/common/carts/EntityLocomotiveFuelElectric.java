@@ -8,10 +8,11 @@
  */
 package mods.railcraft.common.carts;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import mods.railcraft.api.carts.IRefuelableCart;
 import mods.railcraft.api.carts.locomotive.LocomotiveRenderType;
 import mods.railcraft.api.fuel.FuelManager;
-import mods.railcraft.common.carts.EntityLocomotive.LocoSpeed;
 import mods.railcraft.common.core.RailcraftConfig;
 import mods.railcraft.common.fluids.FluidHelper;
 import mods.railcraft.common.fluids.FluidItemHelper;
@@ -27,7 +28,6 @@ import mods.railcraft.common.util.sounds.SoundHelper;
 import mods.railcraft.common.util.thermal.FluidFuelProvider;
 import mods.railcraft.common.util.thermal.ThermalElectricGenerator;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.particle.EntitySmokeFX;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
@@ -122,7 +122,7 @@ public class EntityLocomotiveFuelElectric extends EntityLocomotive implements IS
     @Override
     public void onUpdate() {
         super.onUpdate();
-        
+
         if (Game.isHost(worldObj)){
         	update++;
         	
@@ -136,28 +136,15 @@ public class EntityLocomotiveFuelElectric extends EntityLocomotive implements IS
             
             if (update % FluidHelper.BUCKET_FILL_TIME == 0)
                 FluidHelper.drainContainers(this, this, SLOT_LIQUID_INPUT, SLOT_LIQUID_OUTPUT);
-            
+
         }else{
+        	
             if (isBlackSmoking()){
-            	double rads = this.renderYaw * Math.PI / 180.0D;
-            	float offset = 0.35F;
-            	for (int i = 0; i < 5; i++) {
-            		//worldObj.spawnParticle("largesmoke", posX - Math.cos(rads) * offset, posY + 0.7f, posZ -  Math.sin(rads) * offset, 0, 0.75F, 0);
-            		EntitySmokeFX blacksmokefx = new EntitySmokeFX(this.worldObj, posX - Math.cos(rads) * offset, posY + 1.1f, posZ - Math.sin(rads) * offset, 0, 0.0075F, 0, 2F);
-            		blacksmokefx.setAlphaF(0.66F);
-            		Minecraft.getMinecraft().effectRenderer.addEffect(blacksmokefx);
-                }
+            	doBlackSmoking();
             }
+            
             if (isWhiteSmoking()){
-            	double rads = renderYaw * Math.PI / 180D;
-            	float offset = 0.35F;
-            	for (int i = 0; i < 3; i++) {
-            		EntitySmokeFX whitesmokefx = new EntitySmokeFX(this.worldObj, posX - Math.cos(rads) * offset, posY + 1.1f, posZ - Math.sin(rads) * offset, 0, 0.001F, 0, 2F);
-            		float color = (float) Math.min(Math.random() + 0.65F, 1);
-            		whitesmokefx.setRBGColorF(color, color, color);
-            		whitesmokefx.setAlphaF(0.165F);
-            		Minecraft.getMinecraft().effectRenderer.addEffect(whitesmokefx);
-            	}
+            	doWhiteSmoking();
             }
         }
     }
@@ -257,6 +244,30 @@ public class EntityLocomotiveFuelElectric extends EntityLocomotive implements IS
     private void setWhiteSmoking(boolean smoke) {
         if (getFlag(WHITESMOKE_FLAG) != smoke)
             setFlag(WHITESMOKE_FLAG, smoke);
+    }
+    
+    @SideOnly(Side.CLIENT)
+    private void doBlackSmoking() {
+    	double rads = this.renderYaw * Math.PI / 180.0D;
+    	float offset = 0.35F;
+    	for (int i = 0; i < 5; i++) {
+    		//worldObj.spawnParticle("largesmoke", posX - Math.cos(rads) * offset, posY + 0.7f, posZ -  Math.sin(rads) * offset, 0, 0.75F, 0);
+        	EntitySmokeFX blacksmokefx = new EntitySmokeFX(this.worldObj, posX - Math.cos(rads) * offset, posY + 1.1f, posZ - Math.sin(rads) * offset, 0, 0.0075F, 0, 2F);
+    		blacksmokefx.setAlphaF(0.66F);
+    		Minecraft.getMinecraft().effectRenderer.addEffect(blacksmokefx);
+        }
+    }
+    @SideOnly(Side.CLIENT)
+    private void doWhiteSmoking() {
+    	double rads = renderYaw * Math.PI / 180D;
+    	float offset = 0.35F;
+    	for (int i = 0; i < 3; i++) {
+    		EntitySmokeFX whitesmokefx = new EntitySmokeFX(this.worldObj, posX - Math.cos(rads) * offset, posY + 1.1f, posZ - Math.sin(rads) * offset, 0, 0.001F, 0, 2F);
+    		float color = (float) Math.min(Math.random() + 0.65F, 1);
+    		whitesmokefx.setRBGColorF(color, color, color);
+    		whitesmokefx.setAlphaF(0.165F);
+    		Minecraft.getMinecraft().effectRenderer.addEffect(whitesmokefx);
+    	}
     }
 
     @Override
